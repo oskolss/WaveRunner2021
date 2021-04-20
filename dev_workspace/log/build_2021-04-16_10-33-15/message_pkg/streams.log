@@ -1,0 +1,53 @@
+[0.181s] Invoking command in '/home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/build/message_pkg': CMAKE_PREFIX_PATH=/home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/waverunner_package:/opt/ros/dashing /usr/bin/cmake --build /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/build/message_pkg -- -j2 -l2
+[0.643s] -- Found ament_cmake: 0.7.6 (/opt/ros/dashing/share/ament_cmake/cmake)
+[1.003s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.9", minimum required is "3") 
+[1.006s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.671s] -- Found ament_lint_auto: 0.7.12 (/opt/ros/dashing/share/ament_lint_auto/cmake)
+[4.577s] -- Found rosidl_default_generators: 0.7.0 (/opt/ros/dashing/share/rosidl_default_generators/cmake)
+[5.200s] -- Found rosidl_adapter: 0.7.10 (/opt/ros/dashing/share/rosidl_adapter/cmake)
+[6.027s] -- Found PrismTech OpenSplice: /usr/share/opensplice/cmake
+[6.608s] -- Found PythonInterp: /usr/bin/python3 (found version "3.6.9") 
+[8.516s] CMake Error at /opt/ros/dashing/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:60 (message):
+[8.519s]   execute_process(/usr/bin/python3 -m rosidl_adapter --package-name
+[8.519s]   message_pkg --arguments-file
+[8.520s]   /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/build/message_pkg/rosidl_adapter__arguments__message_pkg.json
+[8.521s]   --output-dir
+[8.522s]   /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/build/message_pkg/rosidl_adapter/message_pkg
+[8.523s]   --output-file
+[8.523s]   /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/build/message_pkg/rosidl_adapter/message_pkg.idls)
+[8.524s]   returned error code 1:
+[8.525s] 
+[8.525s]   Error processing 'int64 FL' of 'message_pkg/Encoder': 'the field name 'FL'
+[8.526s]   is not valid'
+[8.527s] 
+[8.528s]   Traceback (most recent call last):
+[8.528s] 
+[8.529s]     File "/usr/lib/python3.6/runpy.py", line 193, in _run_module_as_main
+[8.537s]       "__main__", mod_spec)
+[8.538s]     File "/usr/lib/python3.6/runpy.py", line 85, in _run_code
+[8.539s]       exec(code, run_globals)
+[8.540s]     File "/opt/ros/dashing/lib/python3.6/site-packages/rosidl_adapter/__main__.py", line 19, in <module>
+[8.540s]       sys.exit(main())
+[8.551s]     File "/opt/ros/dashing/lib/python3.6/site-packages/rosidl_adapter/main.py", line 55, in main
+[8.552s]       pathlib.Path(relative_path), output_dir)
+[8.553s]     File "/opt/ros/dashing/lib/python3.6/site-packages/rosidl_adapter/__init__.py", line 20, in convert_to_idl
+[8.554s]       package_dir, package_name, interface_file, output_dir / 'msg')
+[8.555s]     File "/opt/ros/dashing/lib/python3.6/site-packages/rosidl_adapter/msg/__init__.py", line 28, in convert_msg_to_idl
+[8.555s]       msg = parse_message_string(package_name, input_file.stem, content)
+[8.556s]     File "/opt/ros/dashing/lib/python3.6/site-packages/rosidl_adapter/parser.py", line 505, in parse_message_string
+[8.557s]       field_name, default_value_string))
+[8.576s]     File "/opt/ros/dashing/lib/python3.6/site-packages/rosidl_adapter/parser.py", line 346, in __init__
+[8.577s]       raise NameError("the field name '%s' is not valid" % name)
+[8.578s] 
+[8.579s]   NameError: the field name 'FL' is not valid
+[8.598s] 
+[8.604s] Call Stack (most recent call first):
+[8.605s]   /opt/ros/dashing/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:130 (rosidl_adapt_interfaces)
+[8.607s]   CMakeLists.txt:41 (rosidl_generate_interfaces)
+[8.607s] 
+[8.608s] 
+[8.609s] -- Configuring incomplete, errors occurred!
+[8.610s] See also "/home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/build/message_pkg/CMakeFiles/CMakeOutput.log".
+[8.611s] Makefile:1400: recipe for target 'cmake_check_build_system' failed
+[8.611s] make: *** [cmake_check_build_system] Error 1
+[8.626s] Invoked command in '/home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/build/message_pkg' returned '2': CMAKE_PREFIX_PATH=/home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/waverunner_package:/opt/ros/dashing /usr/bin/cmake --build /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/build/message_pkg -- -j2 -l2

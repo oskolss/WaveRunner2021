@@ -1,0 +1,122 @@
+-- The C compiler identification is GNU 7.5.0
+-- The CXX compiler identification is GNU 7.5.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 0.7.6 (/opt/ros/dashing/share/ament_cmake/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.9", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found ament_index_cpp: 0.7.2 (/opt/ros/dashing/share/ament_index_cpp/cmake)
+-- Found geometry_msgs: 0.7.0 (/opt/ros/dashing/share/geometry_msgs/cmake)
+-- Found rosidl_adapter: 0.7.10 (/opt/ros/dashing/share/rosidl_adapter/cmake)
+-- Found rclcpp: 0.7.15 (/opt/ros/dashing/share/rclcpp/cmake)
+-- Found rmw_implementation_cmake: 0.7.2 (/opt/ros/dashing/share/rmw_implementation_cmake/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Looking for pthread_create
+-- Looking for pthread_create - not found
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Found rclcpp_action: 0.7.15 (/opt/ros/dashing/share/rclcpp_action/cmake)
+-- Found rosidl_default_generators: 0.7.0 (/opt/ros/dashing/share/rosidl_default_generators/cmake)
+-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1") 
+-- Found FastRTPS: /opt/ros/dashing/include  
+-- Found PrismTech OpenSplice: /usr/share/opensplice/cmake
+-- Found std_srvs: 0.7.0 (/opt/ros/dashing/share/std_srvs/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found version "3.6.9") 
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_opensplice_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp;rosidl_typesupport_opensplice_cpp
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.9", minimum required is "3.5") 
+-- Found python_cmake_module: 0.7.11 (/opt/ros/dashing/share/python_cmake_module/cmake)
+-- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.6m.so (found suitable version "3.6.9", minimum required is "3.5") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.6m
+-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.6m.so
+-- Found PythonExtra: .so  
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/waverunner/Waverunner_Code/WaveRunner2021/build/turtlesim
+[35m[1mScanning dependencies of target turtlesim__cpp[0m
+[  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[  1%] [34m[1mGenerating C++ code for ROS interfaces[0m
+make[2]: *** Deleting file 'rosidl_generator_cpp/turtlesim/action/rotate_absolute.hpp'
+make[2]: *** Deleting file 'rosidl_generator_c/turtlesim/action/rotate_absolute.h'
+Traceback (most recent call last):
+  File "/opt/ros/dashing/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp", line 40, in <module>
+    sys.exit(main())
+  File "/opt/ros/dashing/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp", line 35, in main
+    args.generator_arguments_file,
+  File "/opt/ros/dashing/lib/python3.6/site-packages/rosidl_generator_cpp/__init__.py", line 37, in generate_cpp
+    generate_files(generator_arguments_file, mapping)
+  File "/opt/ros/dashing/lib/python3.6/site-packages/rosidl_cmake/__init__.py", line 70, in generate_files
+Traceback (most recent call last):
+    idl_file = parse_idl_file(locator)
+  File "/opt/ros/dashing/lib/python3.6/site-packages/rosidl_parser/parser.py", line 64, in parse_idl_file
+  File "/opt/ros/dashing/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c", line 40, in <module>
+    content = parse_idl_string(string, png_file=png_file)
+  File "/opt/ros/dashing/lib/python3.6/site-packages/rosidl_parser/parser.py", line 72, in parse_idl_string
+    tree = get_ast_from_idl_string(idl_string)
+  File "/opt/ros/dashing/lib/python3.6/site-packages/rosidl_parser/parser.py", line 89, in get_ast_from_idl_string
+    return _parser.parse(idl_string)
+  File "/usr/lib/python3/dist-packages/lark/lark.py", line 306, in parse
+    sys.exit(main())
+  File "/opt/ros/dashing/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c", line 35, in main
+    args.generator_arguments_file,
+  File "/opt/ros/dashing/lib/python3.6/site-packages/rosidl_generator_c/__init__.py", line 37, in generate_c
+    generate_files(generator_arguments_file, mapping)
+  File "/opt/ros/dashing/lib/python3.6/site-packages/rosidl_cmake/__init__.py", line 70, in generate_files
+    return self.parser.parse(text, start=start)
+  File "/usr/lib/python3/dist-packages/lark/parser_frontends.py", line 182, in parse
+    idl_file = parse_idl_file(locator)
+  File "/opt/ros/dashing/lib/python3.6/site-packages/rosidl_parser/parser.py", line 64, in parse_idl_file
+    return self._parse(text, start)
+  File "/usr/lib/python3/dist-packages/lark/parser_frontends.py", line 54, in _parse
+    return self.parser.parse(input, start, *args)
+  File "/usr/lib/python3/dist-packages/lark/parsers/earley.py", line 293, in parse
+    content = parse_idl_string(string, png_file=png_file)
+  File "/opt/ros/dashing/lib/python3.6/site-packages/rosidl_parser/parser.py", line 72, in parse_idl_string
+    self._parse(stream, columns, to_scan, start_symbol)
+  File "/usr/lib/python3/dist-packages/lark/parsers/xearley.py", line 137, in _parse
+    tree = get_ast_from_idl_string(idl_string)
+  File "/opt/ros/dashing/lib/python3.6/site-packages/rosidl_parser/parser.py", line 89, in get_ast_from_idl_string
+    to_scan = scan(i, to_scan)
+KeyboardInterrupt
+    return _parser.parse(idl_string)
+  File "/usr/lib/python3/dist-packages/lark/lark.py", line 306, in parse
+    return self.parser.parse(text, start=start)
+  File "/usr/lib/python3/dist-packages/lark/parser_frontends.py", line 182, in parse
+    return self._parse(text, start)
+  File "/usr/lib/python3/dist-packages/lark/parser_frontends.py", line 54, in _parse
+    return self.parser.parse(input, start, *args)
+  File "/usr/lib/python3/dist-packages/lark/parsers/earley.py", line 293, in parse
+    self._parse(stream, columns, to_scan, start_symbol)
+  File "/usr/lib/python3/dist-packages/lark/parsers/xearley.py", line 135, in _parse
+    self.predict_and_complete(i, to_scan, columns, transitives)
+  File "/usr/lib/python3/dist-packages/lark/parsers/earley.py", line 131, in predict_and_complete
+    new_item = Item(rule, 0, i)
+  File "/usr/lib/python3/dist-packages/lark/parsers/earley_common.py", line 36, in __init__
+    self._hash = hash((self.s, self.start))
+KeyboardInterrupt
+CMakeFiles/turtlesim__rosidl_generator_c.dir/build.make:88: recipe for target 'rosidl_generator_c/turtlesim/action/rotate_absolute.h' failed
+make[2]: *** [rosidl_generator_c/turtlesim/action/rotate_absolute.h] Error 1
+CMakeFiles/Makefile2:179: recipe for target 'CMakeFiles/turtlesim__rosidl_generator_c.dir/all' failed
+make[1]: *** [CMakeFiles/turtlesim__rosidl_generator_c.dir/all] Interrupt
+CMakeFiles/turtlesim__cpp.dir/build.make:107: recipe for target 'rosidl_generator_cpp/turtlesim/action/rotate_absolute.hpp' failed
+make[2]: *** [rosidl_generator_cpp/turtlesim/action/rotate_absolute.hpp] Error 1
+make[1]: *** [CMakeFiles/turtlesim__cpp.dir/all] Interrupt
+make: *** [all] Interrupt
+CMakeFiles/Makefile2:545: recipe for target 'CMakeFiles/turtlesim__cpp.dir/all' failed
+Makefile:140: recipe for target 'all' failed

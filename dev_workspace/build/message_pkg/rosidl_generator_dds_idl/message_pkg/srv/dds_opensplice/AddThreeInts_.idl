@@ -1,0 +1,101 @@
+// generated from rosidl_generator_dds_idl/resource/idl.idl.em
+// with input from message_pkg:srv/AddThreeInts.idl
+// generated code does not contain a copyright notice
+
+#ifndef __message_pkg__srv__add_three_ints__idl__
+#define __message_pkg__srv__add_three_ints__idl__
+
+
+module message_pkg {
+
+module srv {
+
+module dds_ {
+
+
+struct AddThreeInts_Request_ {
+long long a_;
+long long b_;
+long long c_;
+
+};
+
+#pragma keylist AddThreeInts_Request_
+
+};  // module dds_
+
+};  // module srv
+
+};  // module message_pkg
+
+
+module message_pkg {
+
+module srv {
+
+module dds_ {
+
+
+struct AddThreeInts_Response_ {
+long long sum_;
+
+};
+
+#pragma keylist AddThreeInts_Response_
+
+};  // module dds_
+
+};  // module srv
+
+};  // module message_pkg
+
+
+module message_pkg {
+
+module srv {
+
+module dds_ {
+
+struct Sample_AddThreeInts_Request_ {
+
+unsigned long long client_guid_0_;
+unsigned long long client_guid_1_;
+long long sequence_number_;
+message_pkg::srv::dds_::AddThreeInts_Request_ request_;
+
+};
+
+#pragma keylist Sample_AddThreeInts_Request_
+
+};  // module dds_
+
+};  // module srv {
+
+};  // module message_pkg {
+
+
+module message_pkg {
+
+module srv {
+
+module dds_ {
+
+struct Sample_AddThreeInts_Response_ {
+
+unsigned long long client_guid_0_;
+unsigned long long client_guid_1_;
+long long sequence_number_;
+message_pkg::srv::dds_::AddThreeInts_Response_ response_;
+
+};
+
+#pragma keylist Sample_AddThreeInts_Response_
+
+};  // module dds_
+
+};  // module srv {
+
+};  // module message_pkg {
+
+
+#endif  // __message_pkg__srv__add_three_ints__idl__
