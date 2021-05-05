@@ -25,65 +25,40 @@ namespace msg
 namespace rosidl_typesupport_introspection_cpp
 {
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember Encoder_message_member_array[4] = {
+size_t size_function__Encoder__encodervalue(const void * untyped_member)
+{
+  (void)untyped_member;
+  return 4;
+}
+
+const void * get_const_function__Encoder__encodervalue(const void * untyped_member, size_t index)
+{
+  const auto & member =
+    *reinterpret_cast<const std::array<int32_t, 4> *>(untyped_member);
+  return &member[index];
+}
+
+void * get_function__Encoder__encodervalue(void * untyped_member, size_t index)
+{
+  auto & member =
+    *reinterpret_cast<std::array<int32_t, 4> *>(untyped_member);
+  return &member[index];
+}
+
+static const ::rosidl_typesupport_introspection_cpp::MessageMember Encoder_message_member_array[1] = {
   {
-    "fl",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT64,  // type
+    "encodervalue",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT32,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
-    false,  // is array
-    0,  // array size
+    true,  // is array
+    4,  // array size
     false,  // is upper bound
-    offsetof(message_pkg::msg::Encoder, fl),  // bytes offset in struct
+    offsetof(message_pkg::msg::Encoder, encodervalue),  // bytes offset in struct
     nullptr,  // default value
-    nullptr,  // size() function pointer
-    nullptr,  // get_const(index) function pointer
-    nullptr,  // get(index) function pointer
-    NULL  // resize(index) function pointer
-  },
-  {
-    "fr",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT64,  // type
-    0,  // upper bound of string
-    NULL,  // members of sub message
-    false,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(message_pkg::msg::Encoder, fr),  // bytes offset in struct
-    nullptr,  // default value
-    nullptr,  // size() function pointer
-    nullptr,  // get_const(index) function pointer
-    nullptr,  // get(index) function pointer
-    NULL  // resize(index) function pointer
-  },
-  {
-    "rl",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT64,  // type
-    0,  // upper bound of string
-    NULL,  // members of sub message
-    false,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(message_pkg::msg::Encoder, rl),  // bytes offset in struct
-    nullptr,  // default value
-    nullptr,  // size() function pointer
-    nullptr,  // get_const(index) function pointer
-    nullptr,  // get(index) function pointer
-    NULL  // resize(index) function pointer
-  },
-  {
-    "rr",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT64,  // type
-    0,  // upper bound of string
-    NULL,  // members of sub message
-    false,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(message_pkg::msg::Encoder, rr),  // bytes offset in struct
-    nullptr,  // default value
-    nullptr,  // size() function pointer
-    nullptr,  // get_const(index) function pointer
-    nullptr,  // get(index) function pointer
+    size_function__Encoder__encodervalue,  // size() function pointer
+    get_const_function__Encoder__encodervalue,  // get_const(index) function pointer
+    get_function__Encoder__encodervalue,  // get(index) function pointer
     NULL  // resize(index) function pointer
   }
 };
@@ -91,7 +66,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Encoder_messa
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers Encoder_message_members = {
   "message_pkg::msg",  // message namespace
   "Encoder",  // message name
-  4,  // number of fields
+  1,  // number of fields
   sizeof(message_pkg::msg::Encoder),
   Encoder_message_member_array  // message members
 };

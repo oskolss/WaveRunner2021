@@ -49,24 +49,11 @@ static bool _Encoder__cdr_serialize(
     return false;
   }
   const _Encoder__ros_msg_type * ros_message = static_cast<const _Encoder__ros_msg_type *>(untyped_ros_message);
-  // Field name: fl
+  // Field name: encodervalue
   {
-    cdr << ros_message->fl;
-  }
-
-  // Field name: fr
-  {
-    cdr << ros_message->fr;
-  }
-
-  // Field name: rl
-  {
-    cdr << ros_message->rl;
-  }
-
-  // Field name: rr
-  {
-    cdr << ros_message->rr;
+    size_t size = 4;
+    auto array_ptr = ros_message->encodervalue;
+    cdr.serializeArray(array_ptr, size);
   }
 
   return true;
@@ -81,24 +68,11 @@ static bool _Encoder__cdr_deserialize(
     return false;
   }
   _Encoder__ros_msg_type * ros_message = static_cast<_Encoder__ros_msg_type *>(untyped_ros_message);
-  // Field name: fl
+  // Field name: encodervalue
   {
-    cdr >> ros_message->fl;
-  }
-
-  // Field name: fr
-  {
-    cdr >> ros_message->fr;
-  }
-
-  // Field name: rl
-  {
-    cdr >> ros_message->rl;
-  }
-
-  // Field name: rr
-  {
-    cdr >> ros_message->rr;
+    size_t size = 4;
+    auto array_ptr = ros_message->encodervalue;
+    cdr.deserializeArray(array_ptr, size);
   }
 
   return true;
@@ -118,28 +92,13 @@ size_t get_serialized_size_message_pkg__msg__Encoder(
   (void)padding;
   (void)wchar_size;
 
-  // field.name fl
+  // field.name encodervalue
   {
-    size_t item_size = sizeof(ros_message->fl);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // field.name fr
-  {
-    size_t item_size = sizeof(ros_message->fr);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // field.name rl
-  {
-    size_t item_size = sizeof(ros_message->rl);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // field.name rr
-  {
-    size_t item_size = sizeof(ros_message->rr);
-    current_alignment += item_size +
+    size_t array_size = 4;
+    auto array_ptr = ros_message->encodervalue;
+    (void)array_ptr;
+    size_t item_size = sizeof(array_ptr[0]);
+    current_alignment += array_size * item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
 
@@ -166,33 +125,12 @@ size_t max_serialized_size_message_pkg__msg__Encoder(
   (void)wchar_size;
   (void)full_bounded;
 
-  // member: fl
+  // member: encodervalue
   {
-    size_t array_size = 1;
+    size_t array_size = 4;
 
-    current_alignment += array_size * sizeof(uint64_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
-  }
-  // member: fr
-  {
-    size_t array_size = 1;
-
-    current_alignment += array_size * sizeof(uint64_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
-  }
-  // member: rl
-  {
-    size_t array_size = 1;
-
-    current_alignment += array_size * sizeof(uint64_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
-  }
-  // member: rr
-  {
-    size_t array_size = 1;
-
-    current_alignment += array_size * sizeof(uint64_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
   return current_alignment - initial_alignment;

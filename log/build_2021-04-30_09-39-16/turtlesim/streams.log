@@ -1,0 +1,38 @@
+[0.157s] Invoking command in '/home/waverunner/Waverunner_Code/WaveRunner2021/build/turtlesim': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/bin/cmake --build /home/waverunner/Waverunner_Code/WaveRunner2021/build/turtlesim -- -j2 -l2
+[1.020s] [  0%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[15.542s] make[2]: *** Deleting file 'rosidl_generator_cpp/turtlesim/action/rotate_absolute.hpp'
+[15.588s] Traceback (most recent call last):
+[15.616s]   File "/opt/ros/dashing/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp", line 40, in <module>
+[15.617s]     sys.exit(main())
+[15.643s]   File "/opt/ros/dashing/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp", line 35, in main
+[15.644s]     args.generator_arguments_file,
+[15.654s]   File "/opt/ros/dashing/lib/python3.6/site-packages/rosidl_generator_cpp/__init__.py", line 37, in generate_cpp
+[15.655s]     generate_files(generator_arguments_file, mapping)
+[15.656s]   File "/opt/ros/dashing/lib/python3.6/site-packages/rosidl_cmake/__init__.py", line 70, in generate_files
+[15.669s]     idl_file = parse_idl_file(locator)
+[15.670s]   File "/opt/ros/dashing/lib/python3.6/site-packages/rosidl_parser/parser.py", line 64, in parse_idl_file
+[15.670s]     content = parse_idl_string(string, png_file=png_file)
+[15.685s]   File "/opt/ros/dashing/lib/python3.6/site-packages/rosidl_parser/parser.py", line 72, in parse_idl_string
+[15.685s]     tree = get_ast_from_idl_string(idl_string)
+[15.686s]   File "/opt/ros/dashing/lib/python3.6/site-packages/rosidl_parser/parser.py", line 89, in get_ast_from_idl_string
+[15.687s]     return _parser.parse(idl_string)
+[15.687s]   File "/usr/lib/python3/dist-packages/lark/lark.py", line 306, in parse
+[15.688s]     return self.parser.parse(text, start=start)
+[15.713s]   File "/usr/lib/python3/dist-packages/lark/parser_frontends.py", line 182, in parse
+[15.731s]     return self._parse(text, start)
+[15.732s]   File "/usr/lib/python3/dist-packages/lark/parser_frontends.py", line 54, in _parse
+[15.749s]     return self.parser.parse(input, start, *args)
+[15.750s]   File "/usr/lib/python3/dist-packages/lark/parsers/earley.py", line 293, in parse
+[15.751s]     self._parse(stream, columns, to_scan, start_symbol)
+[15.751s]   File "/usr/lib/python3/dist-packages/lark/parsers/xearley.py", line 135, in _parse
+[15.752s]     self.predict_and_complete(i, to_scan, columns, transitives)
+[15.765s]   File "/usr/lib/python3/dist-packages/lark/parsers/earley.py", line 144, in predict_and_complete
+[15.766s]     to_scan.add(new_item)
+[15.767s] KeyboardInterrupt
+[16.127s] CMakeFiles/turtlesim__cpp.dir/build.make:107: recipe for target 'rosidl_generator_cpp/turtlesim/action/rotate_absolute.hpp' failed
+[16.138s] make[2]: *** [rosidl_generator_cpp/turtlesim/action/rotate_absolute.hpp] Error 1
+[16.139s] CMakeFiles/Makefile2:545: recipe for target 'CMakeFiles/turtlesim__cpp.dir/all' failed
+[16.140s] make[1]: *** [CMakeFiles/turtlesim__cpp.dir/all] Interrupt
+[16.149s] Makefile:140: recipe for target 'all' failed
+[16.151s] make: *** [all] Interrupt
+[16.178s] Invoked command in '/home/waverunner/Waverunner_Code/WaveRunner2021/build/turtlesim' returned '-2': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/bin/cmake --build /home/waverunner/Waverunner_Code/WaveRunner2021/build/turtlesim -- -j2 -l2

@@ -1,0 +1,350 @@
+[0.000000] (-) TimerEvent: {}
+[0.002343] (message_pkg) JobQueued: {'identifier': 'message_pkg', 'dependencies': OrderedDict()}
+[0.005229] (waverunner_package) JobQueued: {'identifier': 'waverunner_package', 'dependencies': OrderedDict([('message_pkg', '/home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg')])}
+[0.007241] (message_pkg) JobStarted: {'identifier': 'message_pkg'}
+[0.088692] (message_pkg) JobProgress: {'identifier': 'message_pkg', 'progress': 'cmake'}
+[0.089113] (-) TimerEvent: {}
+[0.094754] (message_pkg) JobProgress: {'identifier': 'message_pkg', 'progress': 'build'}
+[0.100645] (message_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/build/message_pkg', '--', '-j2', '-l2'], 'cwd': '/home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/build/message_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('MAIL', '/var/mail/waverunner'), ('USER', 'waverunner'), ('SSH_CLIENT', '192.168.0.107 53057 22'), ('LC_TIME', 'sv_SE.UTF-8'), ('OSPL_INFOFILE', '<stdout>'), ('GIT_ASKPASS', '/home/waverunner/.vscode-server-insiders/bin/b4816cfd1f4161a3bb272354d181a9947760ee26/extensions/git/dist/askpass.sh'), ('LD_LIBRARY_PATH', '/opt/ros/dashing/opt/yaml_cpp_vendor/lib:/opt/ros/dashing/opt/rviz_ogre_vendor/lib:/usr/lib:/opt/ros/dashing/lib'), ('BROWSER', '/home/waverunner/.vscode-server-insiders/bin/b4816cfd1f4161a3bb272354d181a9947760ee26/bin/helpers/browser.sh'), ('SHLVL', '4'), ('OSPL_URI', 'file:///opt/ros/dashing/share/opensplice_cmake_module/config/ros_ospl.xml'), ('HOME', '/home/waverunner'), ('OLDPWD', '/home/waverunner/Waverunner_Code/WaveRunner2021'), ('TERM_PROGRAM_VERSION', '1.56.0-insider'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-e059eda7-cd6e-4765-bbdb-91856f8ff35b.sock'), ('OSPL_VERBOSITY', '2'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/waverunner/.vscode-server-insiders/bin/b4816cfd1f4161a3bb272354d181a9947760ee26/extensions/git/dist/askpass-main.js'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'sv_SE.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/waverunner/.vscode-server-insiders/bin/b4816cfd1f4161a3bb272354d181a9947760ee26/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('OSPL_TMPL_PATH', '/usr/etc/opensplice/idlpp'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/home/waverunner/ros2_install'), ('ROS_DISTRO', 'dashing'), ('LOGNAME', 'waverunner'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_ID', '190'), ('TERM', 'xterm-256color'), ('OSPL_ERRORFILE', '<stderr>'), ('PATH', '/home/waverunner/.vscode-server-insiders/bin/b4816cfd1f4161a3bb272354d181a9947760ee26/bin:/home/waverunner/.local/bin:/opt/ros/dashing/bin:/home/waverunner/.vscode-server-insiders/bin/b4816cfd1f4161a3bb272354d181a9947760ee26/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'sv_SE.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('OSPL_HOME', '/usr'), ('LC_TELEPHONE', 'sv_SE.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-4a53c42ffe.sock'), ('AMENT_PREFIX_PATH', '/opt/ros/dashing'), ('ROS_DOMAIN_ID', '0'), ('LC_NAME', 'sv_SE.UTF-8'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'sv_SE.UTF-8'), ('LC_IDENTIFICATION', 'sv_SE.UTF-8'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/build/message_pkg'), ('SSH_CONNECTION', '192.168.0.107 53057 192.168.0.115 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('LC_NUMERIC', 'sv_SE.UTF-8'), ('PYTHONPATH', '/opt/ros/dashing/lib/python3.6/site-packages'), ('LC_PAPER', 'sv_SE.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/dashing')]), 'shell': False}
+[0.189506] (-) TimerEvent: {}
+[0.296052] (-) TimerEvent: {}
+[0.398578] (-) TimerEvent: {}
+[0.427021] (message_pkg) StdoutLine: {'line': b'[  1%] Built target message_pkg__dds_opensplice_idl\n'}
+[0.479056] (message_pkg) StdoutLine: {'line': b'[  7%] Built target message_pkg__rosidl_generator_c\n'}
+[0.498786] (-) TimerEvent: {}
+[0.566235] (message_pkg) StdoutLine: {'line': b'[  8%] Built target message_pkg__cpp\n'}
+[0.599024] (-) TimerEvent: {}
+[0.654192] (message_pkg) StdoutLine: {'line': b'[ 14%] Built target message_pkg__rosidl_typesupport_c\n'}
+[0.699245] (-) TimerEvent: {}
+[0.738908] (message_pkg) StdoutLine: {'line': b'[ 20%] Built target message_pkg__rosidl_typesupport_introspection_c\n'}
+[0.799472] (-) TimerEvent: {}
+[0.902098] (-) TimerEvent: {}
+[0.917754] (message_pkg) StdoutLine: {'line': b'[ 25%] Built target message_pkg__rosidl_typesupport_introspection_cpp\n'}
+[1.002321] (-) TimerEvent: {}
+[1.019185] (message_pkg) StdoutLine: {'line': b'[ 47%] Built target message_pkg__rosidl_typesupport_opensplice_cpp\n'}
+[1.102544] (-) TimerEvent: {}
+[1.153936] (message_pkg) StdoutLine: {'line': b'[ 52%] Built target message_pkg__rosidl_typesupport_fastrtps_cpp\n'}
+[1.158867] (message_pkg) StdoutLine: {'line': b'[ 58%] Built target message_pkg__rosidl_typesupport_cpp\n'}
+[1.202769] (-) TimerEvent: {}
+[1.306450] (-) TimerEvent: {}
+[1.379280] (message_pkg) StdoutLine: {'line': b'[ 64%] Built target message_pkg__rosidl_typesupport_fastrtps_c\n'}
+[1.406673] (-) TimerEvent: {}
+[1.507704] (-) TimerEvent: {}
+[1.514297] (message_pkg) StdoutLine: {'line': b'[ 87%] Built target message_pkg__rosidl_typesupport_opensplice_c\n'}
+[1.608167] (-) TimerEvent: {}
+[1.632406] (message_pkg) StdoutLine: {'line': b'[ 87%] Built target message_pkg\n'}
+[1.708379] (-) TimerEvent: {}
+[1.755134] (message_pkg) StdoutLine: {'line': b'[ 88%] Built target message_pkg__py\n'}
+[1.808780] (-) TimerEvent: {}
+[1.912592] (-) TimerEvent: {}
+[1.930313] (message_pkg) StdoutLine: {'line': b'[ 92%] Built target message_pkg__python\n'}
+[2.012812] (-) TimerEvent: {}
+[2.114864] (-) TimerEvent: {}
+[2.125472] (message_pkg) StdoutLine: {'line': b'[ 95%] Built target message_pkg__rosidl_typesupport_opensplice_c__pyext\n'}
+[2.205034] (message_pkg) StdoutLine: {'line': b'[ 97%] Built target message_pkg__rosidl_typesupport_fastrtps_c__pyext\n'}
+[2.215082] (-) TimerEvent: {}
+[2.306854] (message_pkg) StdoutLine: {'line': b'[100%] Built target message_pkg__rosidl_typesupport_c__pyext\n'}
+[2.315303] (-) TimerEvent: {}
+[2.376795] (message_pkg) CommandEnded: {'returncode': 0}
+[2.416241] (-) TimerEvent: {}
+[2.522258] (-) TimerEvent: {}
+[2.623186] (-) TimerEvent: {}
+[2.724251] (-) TimerEvent: {}
+[2.829997] (-) TimerEvent: {}
+[2.933738] (-) TimerEvent: {}
+[3.034717] (-) TimerEvent: {}
+[3.049543] (message_pkg) JobProgress: {'identifier': 'message_pkg', 'progress': 'install'}
+[3.114229] (message_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/build/message_pkg', '--target', 'install', '--', '-j2', '-l2'], 'cwd': '/home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/build/message_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('MAIL', '/var/mail/waverunner'), ('USER', 'waverunner'), ('SSH_CLIENT', '192.168.0.107 53057 22'), ('LC_TIME', 'sv_SE.UTF-8'), ('OSPL_INFOFILE', '<stdout>'), ('GIT_ASKPASS', '/home/waverunner/.vscode-server-insiders/bin/b4816cfd1f4161a3bb272354d181a9947760ee26/extensions/git/dist/askpass.sh'), ('LD_LIBRARY_PATH', '/opt/ros/dashing/opt/yaml_cpp_vendor/lib:/opt/ros/dashing/opt/rviz_ogre_vendor/lib:/usr/lib:/opt/ros/dashing/lib'), ('BROWSER', '/home/waverunner/.vscode-server-insiders/bin/b4816cfd1f4161a3bb272354d181a9947760ee26/bin/helpers/browser.sh'), ('SHLVL', '4'), ('OSPL_URI', 'file:///opt/ros/dashing/share/opensplice_cmake_module/config/ros_ospl.xml'), ('HOME', '/home/waverunner'), ('OLDPWD', '/home/waverunner/Waverunner_Code/WaveRunner2021'), ('TERM_PROGRAM_VERSION', '1.56.0-insider'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-e059eda7-cd6e-4765-bbdb-91856f8ff35b.sock'), ('OSPL_VERBOSITY', '2'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/waverunner/.vscode-server-insiders/bin/b4816cfd1f4161a3bb272354d181a9947760ee26/extensions/git/dist/askpass-main.js'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'sv_SE.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/waverunner/.vscode-server-insiders/bin/b4816cfd1f4161a3bb272354d181a9947760ee26/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('OSPL_TMPL_PATH', '/usr/etc/opensplice/idlpp'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/home/waverunner/ros2_install'), ('ROS_DISTRO', 'dashing'), ('LOGNAME', 'waverunner'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_ID', '190'), ('TERM', 'xterm-256color'), ('OSPL_ERRORFILE', '<stderr>'), ('PATH', '/home/waverunner/.vscode-server-insiders/bin/b4816cfd1f4161a3bb272354d181a9947760ee26/bin:/home/waverunner/.local/bin:/opt/ros/dashing/bin:/home/waverunner/.vscode-server-insiders/bin/b4816cfd1f4161a3bb272354d181a9947760ee26/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'sv_SE.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('OSPL_HOME', '/usr'), ('LC_TELEPHONE', 'sv_SE.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-4a53c42ffe.sock'), ('AMENT_PREFIX_PATH', '/opt/ros/dashing'), ('ROS_DOMAIN_ID', '0'), ('LC_NAME', 'sv_SE.UTF-8'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'sv_SE.UTF-8'), ('LC_IDENTIFICATION', 'sv_SE.UTF-8'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/build/message_pkg'), ('SSH_CONNECTION', '192.168.0.107 53057 192.168.0.115 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('LC_NUMERIC', 'sv_SE.UTF-8'), ('PYTHONPATH', '/opt/ros/dashing/lib/python3.6/site-packages'), ('LC_PAPER', 'sv_SE.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/dashing')]), 'shell': False}
+[3.135294] (-) TimerEvent: {}
+[3.242044] (-) TimerEvent: {}
+[3.346919] (-) TimerEvent: {}
+[3.432290] (message_pkg) StdoutLine: {'line': b'[  1%] Built target message_pkg__dds_opensplice_idl\n'}
+[3.441274] (message_pkg) StdoutLine: {'line': b'[  7%] Built target message_pkg__rosidl_generator_c\n'}
+[3.447140] (-) TimerEvent: {}
+[3.548223] (-) TimerEvent: {}
+[3.584113] (message_pkg) StdoutLine: {'line': b'[ 14%] Built target message_pkg__rosidl_typesupport_c\n'}
+[3.591258] (message_pkg) StdoutLine: {'line': b'[ 14%] Built target message_pkg__cpp\n'}
+[3.648440] (-) TimerEvent: {}
+[3.750055] (message_pkg) StdoutLine: {'line': b'[ 20%] Built target message_pkg__rosidl_typesupport_introspection_c\n'}
+[3.751064] (-) TimerEvent: {}
+[3.853674] (-) TimerEvent: {}
+[3.937135] (message_pkg) StdoutLine: {'line': b'[ 25%] Built target message_pkg__rosidl_typesupport_introspection_cpp\n'}
+[3.953908] (-) TimerEvent: {}
+[3.956954] (message_pkg) StdoutLine: {'line': b'[ 47%] Built target message_pkg__rosidl_typesupport_opensplice_cpp\n'}
+[4.054151] (-) TimerEvent: {}
+[4.137671] (message_pkg) StdoutLine: {'line': b'[ 52%] Built target message_pkg__rosidl_typesupport_cpp\n'}
+[4.144580] (message_pkg) StdoutLine: {'line': b'[ 58%] Built target message_pkg__rosidl_typesupport_fastrtps_cpp\n'}
+[4.154365] (-) TimerEvent: {}
+[4.257016] (-) TimerEvent: {}
+[4.340820] (message_pkg) StdoutLine: {'line': b'[ 64%] Built target message_pkg__rosidl_typesupport_fastrtps_c\n'}
+[4.357221] (-) TimerEvent: {}
+[4.461289] (-) TimerEvent: {}
+[4.548772] (message_pkg) StdoutLine: {'line': b'[ 87%] Built target message_pkg__rosidl_typesupport_opensplice_c\n'}
+[4.561504] (-) TimerEvent: {}
+[4.665243] (-) TimerEvent: {}
+[4.669038] (message_pkg) StdoutLine: {'line': b'[ 87%] Built target message_pkg\n'}
+[4.765498] (-) TimerEvent: {}
+[4.784896] (message_pkg) StdoutLine: {'line': b'[ 88%] Built target message_pkg__py\n'}
+[4.865710] (-) TimerEvent: {}
+[4.958729] (message_pkg) StdoutLine: {'line': b'[ 92%] Built target message_pkg__python\n'}
+[4.968086] (-) TimerEvent: {}
+[5.069090] (-) TimerEvent: {}
+[5.171591] (-) TimerEvent: {}
+[5.177814] (message_pkg) StdoutLine: {'line': b'[ 96%] Built target message_pkg__rosidl_typesupport_opensplice_c__pyext\n'}
+[5.183968] (message_pkg) StdoutLine: {'line': b'[ 97%] Built target message_pkg__rosidl_typesupport_fastrtps_c__pyext\n'}
+[5.271805] (-) TimerEvent: {}
+[5.349604] (message_pkg) StdoutLine: {'line': b'[100%] Built target message_pkg__rosidl_typesupport_c__pyext\n'}
+[5.372041] (-) TimerEvent: {}
+[5.475206] (message_pkg) StdoutLine: {'line': b'\x1b[36mInstall the project...\x1b[0m\n'}
+[5.476300] (-) TimerEvent: {}
+[5.532062] (message_pkg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[5.533326] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/share/ament_index/resource_index/rosidl_interfaces/message_pkg\n'}
+[5.534374] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/lib/libmessage_pkg__rosidl_typesupport_c.so\n'}
+[5.535261] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/share/message_pkg/environment/library_path.sh\n'}
+[5.536377] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/lib/libmessage_pkg__rosidl_typesupport_cpp.so\n'}
+[5.537655] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg\n'}
+[5.539184] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/msg\n'}
+[5.540111] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/msg/num__rosidl_typesupport_fastrtps_c.h\n'}
+[5.542668] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[5.546628] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/msg/encoder__rosidl_typesupport_fastrtps_c.h\n'}
+[5.549029] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/srv\n'}
+[5.551648] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/srv/add_three_ints__rosidl_typesupport_fastrtps_c.h\n'}
+[5.554348] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/lib/libmessage_pkg__rosidl_typesupport_fastrtps_c.so\n'}
+[5.558742] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg\n'}
+[5.559897] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/msg\n'}
+[5.570520] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/msg/num__functions.h\n'}
+[5.573976] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/msg/encoder__type_support.h\n'}
+[5.575461] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/msg/encoder.h\n'}
+[5.579469] (-) TimerEvent: {}
+[5.582539] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/msg/encoder__functions.c\n'}
+[5.584775] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/msg/num__functions.c\n'}
+[5.587989] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/msg/encoder__functions.h\n'}
+[5.588833] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/msg/encoder__struct.h\n'}
+[5.589599] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/msg/num.h\n'}
+[5.590348] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/msg/num__struct.h\n'}
+[5.591121] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/msg/rosidl_generator_c__visibility_control.h\n'}
+[5.597442] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/msg/num__type_support.h\n'}
+[5.598486] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/srv\n'}
+[5.599264] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/srv/add_three_ints__struct.h\n'}
+[5.603760] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/srv/add_three_ints__functions.h\n'}
+[5.604733] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/srv/add_three_ints__type_support.h\n'}
+[5.605489] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/srv/add_three_ints.h\n'}
+[5.606235] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/srv/add_three_ints__functions.c\n'}
+[5.606968] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/lib/libmessage_pkg__rosidl_generator_c.so\n'}
+[5.607717] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg\n'}
+[5.614401] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/msg\n'}
+[5.615277] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/msg/dds_fastrtps\n'}
+[5.616136] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[5.616888] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/msg/encoder__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.617624] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/msg/num__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.618329] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/srv\n'}
+[5.619038] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/srv/dds_fastrtps\n'}
+[5.619754] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/srv/add_three_ints__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.628887] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/lib/libmessage_pkg__rosidl_typesupport_fastrtps_cpp.so\n'}
+[5.629663] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg\n'}
+[5.630394] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/msg\n'}
+[5.631168] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/msg/num__struct.hpp\n'}
+[5.631949] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/msg/encoder__traits.hpp\n'}
+[5.632739] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/msg/encoder.hpp\n'}
+[5.633472] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/msg/num__traits.hpp\n'}
+[5.634193] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/msg/encoder__struct.hpp\n'}
+[5.634909] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/msg/num.hpp\n'}
+[5.635629] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/srv\n'}
+[5.652757] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/srv/add_three_ints__traits.hpp\n'}
+[5.653584] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/srv/add_three_ints.hpp\n'}
+[5.654314] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/srv/add_three_ints__struct.hpp\n'}
+[5.655193] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg\n'}
+[5.655979] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/msg\n'}
+[5.656731] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[5.657470] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/msg/num__rosidl_typesupport_introspection_c.h\n'}
+[5.666786] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/msg/encoder__type_support.c\n'}
+[5.667723] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/msg/encoder__rosidl_typesupport_introspection_c.h\n'}
+[5.668555] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/msg/num__type_support.c\n'}
+[5.669355] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/srv\n'}
+[5.670092] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/srv/add_three_ints__type_support.c\n'}
+[5.670802] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/srv/add_three_ints__rosidl_typesupport_introspection_c.h\n'}
+[5.671499] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/lib/libmessage_pkg__rosidl_typesupport_introspection_c.so\n'}
+[5.675195] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg\n'}
+[5.676699] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/msg\n'}
+[5.677537] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/msg/dds_opensplice_c\n'}
+[5.678281] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/msg/rosidl_typesupport_opensplice_c__visibility_control.h\n'}
+[5.679053] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/msg/encoder__rosidl_typesupport_opensplice_c.h\n'}
+[5.679893] (-) TimerEvent: {}
+[5.693163] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/msg/num__rosidl_typesupport_opensplice_c.h\n'}
+[5.695860] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/srv\n'}
+[5.696706] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/srv/dds_opensplice_c\n'}
+[5.697546] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/srv/add_three_ints__rosidl_typesupport_opensplice_c.h\n'}
+[5.698288] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/lib/libmessage_pkg__rosidl_typesupport_opensplice_c.so\n'}
+[5.699022] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/share/message_pkg/msg/dds_opensplice\n'}
+[5.699763] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/share/message_pkg/msg/dds_opensplice/Num_.idl\n'}
+[5.700580] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/share/message_pkg/msg/dds_opensplice/Encoder_.idl\n'}
+[5.701315] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/share/message_pkg/srv/dds_opensplice\n'}
+[5.702050] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/share/message_pkg/srv/dds_opensplice/AddThreeInts_.idl\n'}
+[5.702786] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg\n'}
+[5.703511] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/msg\n'}
+[5.718006] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/msg/encoder__rosidl_typesupport_opensplice_cpp.hpp\n'}
+[5.718823] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/msg/num__rosidl_typesupport_opensplice_cpp.hpp\n'}
+[5.719585] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/msg/dds_opensplice\n'}
+[5.720419] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/msg/dds_opensplice/ccpp_Num_.h\n'}
+[5.721180] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/msg/dds_opensplice/Num_Dcps.h\n'}
+[5.721923] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/msg/dds_opensplice/ccpp_Encoder_.h\n'}
+[5.729508] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/msg/dds_opensplice/Encoder_SplDcps.h\n'}
+[5.730501] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/msg/dds_opensplice/Encoder_Dcps.h\n'}
+[5.731272] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/msg/dds_opensplice/Num_SplDcps.h\n'}
+[5.732080] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/msg/dds_opensplice/Num_Dcps_impl.h\n'}
+[5.732845] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/msg/dds_opensplice/Num_.h\n'}
+[5.733582] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/msg/dds_opensplice/Encoder_Dcps_impl.h\n'}
+[5.734322] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/msg/dds_opensplice/Encoder_.h\n'}
+[5.735053] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/msg/rosidl_typesupport_opensplice_cpp__visibility_control.h\n'}
+[5.735781] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/srv\n'}
+[5.745085] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/srv/add_three_ints__rosidl_typesupport_opensplice_cpp.hpp\n'}
+[5.745879] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/srv/dds_opensplice\n'}
+[5.746612] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/srv/dds_opensplice/AddThreeInts_Dcps_impl.h\n'}
+[5.747323] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/srv/dds_opensplice/ccpp_AddThreeInts_.h\n'}
+[5.748152] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/srv/dds_opensplice/AddThreeInts_Dcps.h\n'}
+[5.748906] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/srv/dds_opensplice/AddThreeInts_SplDcps.h\n'}
+[5.749650] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/srv/dds_opensplice/AddThreeInts_.h\n'}
+[5.750367] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/lib/libmessage_pkg__rosidl_typesupport_opensplice_cpp.so\n'}
+[5.751106] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg\n'}
+[5.763714] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/msg\n'}
+[5.764813] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/msg/encoder__type_support.cpp\n'}
+[5.765645] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/msg/num__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.766408] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/msg/encoder__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.767136] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/msg/num__type_support.cpp\n'}
+[5.767916] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/srv\n'}
+[5.768677] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/srv/add_three_ints__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.769413] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/include/message_pkg/srv/add_three_ints__type_support.cpp\n'}
+[5.770164] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/lib/libmessage_pkg__rosidl_typesupport_introspection_cpp.so\n'}
+[5.770921] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/share/message_pkg/environment/pythonpath.sh\n'}
+[5.784697] (-) TimerEvent: {}
+[5.788379] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/lib/python3.6/site-packages/message_pkg/__init__.py\n'}
+[5.845968] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/lib/python3.6/site-packages/message_pkg/msg\n'}
+[5.847777] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/lib/python3.6/site-packages/message_pkg/msg/_encoder_s.c\n'}
+[5.849193] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/lib/python3.6/site-packages/message_pkg/msg/_num.py\n'}
+[5.850083] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/lib/python3.6/site-packages/message_pkg/msg/__init__.py\n'}
+[5.850810] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/lib/python3.6/site-packages/message_pkg/msg/_num_s.c\n'}
+[5.851584] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/lib/python3.6/site-packages/message_pkg/msg/_encoder.py\n'}
+[5.852774] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/lib/python3.6/site-packages/message_pkg/srv\n'}
+[5.853513] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/lib/python3.6/site-packages/message_pkg/srv/__init__.py\n'}
+[5.854220] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/lib/python3.6/site-packages/message_pkg/srv/_add_three_ints_s.c\n'}
+[5.854987] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/lib/python3.6/site-packages/message_pkg/srv/_add_three_ints.py\n'}
+[5.855913] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/lib/python3.6/site-packages/message_pkg/message_pkg_s__rosidl_typesupport_c.cpython-36m-aarch64-linux-gnu.so\n'}
+[5.856721] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/lib/python3.6/site-packages/message_pkg/message_pkg_s__rosidl_typesupport_fastrtps_c.cpython-36m-aarch64-linux-gnu.so\n'}
+[5.859940] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/lib/python3.6/site-packages/message_pkg/message_pkg_s__rosidl_typesupport_opensplice_c.cpython-36m-aarch64-linux-gnu.so\n'}
+[5.864045] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/lib/libmessage_pkg__python.so\n'}
+[5.866797] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/share/message_pkg/msg/Num.idl\n'}
+[5.868748] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/share/message_pkg/msg/Encoder.idl\n'}
+[5.870520] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/share/message_pkg/srv/AddThreeInts.idl\n'}
+[5.872314] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/share/message_pkg/msg/Num.msg\n'}
+[5.874038] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/share/message_pkg/msg/Encoder.msg\n'}
+[5.875915] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/share/message_pkg/srv/AddThreeInts.srv\n'}
+[5.878467] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/share/message_pkg/srv/AddThreeInts_Request.msg\n'}
+[5.881308] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/share/message_pkg/srv/AddThreeInts_Response.msg\n'}
+[5.882317] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/share/ament_index/resource_index/package_run_dependencies/message_pkg\n'}
+[5.885584] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/share/ament_index/resource_index/parent_prefix_path/message_pkg\n'}
+[5.886440] (-) TimerEvent: {}
+[5.896266] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/share/message_pkg/environment/ament_prefix_path.sh\n'}
+[5.897305] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/share/message_pkg/environment/path.sh\n'}
+[5.898092] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/share/message_pkg/local_setup.bash\n'}
+[5.898846] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/share/message_pkg/local_setup.sh\n'}
+[5.899628] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/share/message_pkg/local_setup.zsh\n'}
+[5.912723] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/share/ament_index/resource_index/packages/message_pkg\n'}
+[5.913758] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/share/message_pkg/cmake/rosidl_cmake-extras.cmake\n'}
+[5.914610] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/share/message_pkg/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[5.915357] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/share/message_pkg/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[5.916233] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/share/message_pkg/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[5.917004] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/share/message_pkg/cmake/message_pkgConfig.cmake\n'}
+[5.917749] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/share/message_pkg/cmake/message_pkgConfig-version.cmake\n'}
+[5.918477] (message_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/share/message_pkg/package.xml\n'}
+[5.934695] (message_pkg) CommandEnded: {'returncode': 0}
+[5.987223] (-) TimerEvent: {}
+[6.122057] (-) TimerEvent: {}
+[6.242699] (-) TimerEvent: {}
+[6.347770] (-) TimerEvent: {}
+[6.453093] (-) TimerEvent: {}
+[6.556559] (-) TimerEvent: {}
+[6.657493] (-) TimerEvent: {}
+[6.760941] (-) TimerEvent: {}
+[6.863891] (-) TimerEvent: {}
+[6.886394] (message_pkg) JobEnded: {'identifier': 'message_pkg', 'rc': 0}
+[6.909869] (waverunner_package) JobStarted: {'identifier': 'waverunner_package'}
+[6.964215] (-) TimerEvent: {}
+[7.065599] (-) TimerEvent: {}
+[7.170718] (-) TimerEvent: {}
+[7.274053] (-) TimerEvent: {}
+[7.378750] (-) TimerEvent: {}
+[7.479763] (-) TimerEvent: {}
+[7.584207] (-) TimerEvent: {}
+[7.686299] (-) TimerEvent: {}
+[7.790802] (-) TimerEvent: {}
+[7.892824] (-) TimerEvent: {}
+[7.997674] (-) TimerEvent: {}
+[8.099800] (-) TimerEvent: {}
+[8.203935] (-) TimerEvent: {}
+[8.306019] (-) TimerEvent: {}
+[8.409949] (-) TimerEvent: {}
+[8.511592] (-) TimerEvent: {}
+[8.619996] (-) TimerEvent: {}
+[8.721588] (-) TimerEvent: {}
+[8.826931] (-) TimerEvent: {}
+[8.927921] (-) TimerEvent: {}
+[9.035555] (-) TimerEvent: {}
+[9.138611] (-) TimerEvent: {}
+[9.217586] (waverunner_package) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/waverunner_package', 'build', '--build-base', '/home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/build/waverunner_package/build', 'install', '--prefix', '/home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/waverunner_package', '--record', '/home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/build/waverunner_package/install.log', '--single-version-externally-managed'], 'cwd': '/home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/src/waverunner_package', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'MAIL': '/var/mail/waverunner', 'USER': 'waverunner', 'SSH_CLIENT': '192.168.0.107 53057 22', 'LC_TIME': 'sv_SE.UTF-8', 'OSPL_INFOFILE': '<stdout>', 'GIT_ASKPASS': '/home/waverunner/.vscode-server-insiders/bin/b4816cfd1f4161a3bb272354d181a9947760ee26/extensions/git/dist/askpass.sh', 'LD_LIBRARY_PATH': '/home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/lib:/opt/ros/dashing/opt/yaml_cpp_vendor/lib:/opt/ros/dashing/opt/rviz_ogre_vendor/lib:/usr/lib:/opt/ros/dashing/lib', 'BROWSER': '/home/waverunner/.vscode-server-insiders/bin/b4816cfd1f4161a3bb272354d181a9947760ee26/bin/helpers/browser.sh', 'SHLVL': '4', 'OSPL_URI': 'file:///opt/ros/dashing/share/opensplice_cmake_module/config/ros_ospl.xml', 'HOME': '/home/waverunner', 'OLDPWD': '/home/waverunner/Waverunner_Code/WaveRunner2021', 'TERM_PROGRAM_VERSION': '1.56.0-insider', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-e059eda7-cd6e-4765-bbdb-91856f8ff35b.sock', 'OSPL_VERBOSITY': '2', 'VSCODE_GIT_ASKPASS_MAIN': '/home/waverunner/.vscode-server-insiders/bin/b4816cfd1f4161a3bb272354d181a9947760ee26/extensions/git/dist/askpass-main.js', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'sv_SE.UTF-8', 'VSCODE_GIT_ASKPASS_NODE': '/home/waverunner/.vscode-server-insiders/bin/b4816cfd1f4161a3bb272354d181a9947760ee26/node', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'OSPL_TMPL_PATH': '/usr/etc/opensplice/idlpp', 'COLORTERM': 'truecolor', '_colcon_cd_root': '/home/waverunner/ros2_install', 'ROS_DISTRO': 'dashing', 'LOGNAME': 'waverunner', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_ID': '190', 'TERM': 'xterm-256color', 'OSPL_ERRORFILE': '<stderr>', 'PATH': '/home/waverunner/.vscode-server-insiders/bin/b4816cfd1f4161a3bb272354d181a9947760ee26/bin:/home/waverunner/.local/bin:/opt/ros/dashing/bin:/home/waverunner/.vscode-server-insiders/bin/b4816cfd1f4161a3bb272354d181a9947760ee26/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'sv_SE.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'OSPL_HOME': '/usr', 'LC_TELEPHONE': 'sv_SE.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'TERM_PROGRAM': 'vscode', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-4a53c42ffe.sock', 'AMENT_PREFIX_PATH': '/home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg:/opt/ros/dashing', 'ROS_DOMAIN_ID': '0', 'LC_NAME': 'sv_SE.UTF-8', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'sv_SE.UTF-8', 'LC_IDENTIFICATION': 'sv_SE.UTF-8', 'LC_ALL': 'en_US.UTF-8', 'PWD': '/home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/build/waverunner_package', 'SSH_CONNECTION': '192.168.0.107 53057 192.168.0.115 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'LC_NUMERIC': 'sv_SE.UTF-8', 'PYTHONPATH': '/home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/waverunner_package/lib/python3.6/site-packages:/home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages', 'LC_PAPER': 'sv_SE.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg'}, 'shell': False}
+[9.239617] (-) TimerEvent: {}
+[9.343694] (-) TimerEvent: {}
+[9.447280] (-) TimerEvent: {}
+[9.548913] (-) TimerEvent: {}
+[9.667634] (-) TimerEvent: {}
+[9.770188] (-) TimerEvent: {}
+[9.874988] (-) TimerEvent: {}
+[9.977540] (-) TimerEvent: {}
+[10.082152] (-) TimerEvent: {}
+[10.184209] (-) TimerEvent: {}
+[10.288823] (-) TimerEvent: {}
+[10.391351] (-) TimerEvent: {}
+[10.496027] (-) TimerEvent: {}
+[10.597737] (-) TimerEvent: {}
+[10.702500] (-) TimerEvent: {}
+[10.804697] (-) TimerEvent: {}
+[10.910375] (-) TimerEvent: {}
+[11.011961] (-) TimerEvent: {}
+[11.097937] (waverunner_package) StderrLine: {'line': b"/home/waverunner/.local/lib/python3.6/site-packages/setuptools/dist.py:645: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead\n"}
+[11.099279] (waverunner_package) StderrLine: {'line': b'  % (opt, underscore_opt))\n'}
+[11.100125] (waverunner_package) StderrLine: {'line': b"/home/waverunner/.local/lib/python3.6/site-packages/setuptools/dist.py:645: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead\n"}
+[11.100879] (waverunner_package) StderrLine: {'line': b'  % (opt, underscore_opt))\n'}
+[11.112150] (-) TimerEvent: {}
+[11.215548] (-) TimerEvent: {}
+[11.318675] (-) TimerEvent: {}
+[11.367458] (waverunner_package) StdoutLine: {'line': b'running egg_info\n'}
+[11.372221] (waverunner_package) StdoutLine: {'line': b'writing ../../build/waverunner_package/waverunner_package.egg-info/PKG-INFO\n'}
+[11.374857] (waverunner_package) StdoutLine: {'line': b'writing dependency_links to ../../build/waverunner_package/waverunner_package.egg-info/dependency_links.txt\n'}
+[11.377568] (waverunner_package) StdoutLine: {'line': b'writing entry points to ../../build/waverunner_package/waverunner_package.egg-info/entry_points.txt\n'}
+[11.378467] (waverunner_package) StdoutLine: {'line': b'writing requirements to ../../build/waverunner_package/waverunner_package.egg-info/requires.txt\n'}
+[11.379228] (waverunner_package) StdoutLine: {'line': b'writing top-level names to ../../build/waverunner_package/waverunner_package.egg-info/top_level.txt\n'}
+[11.418944] (-) TimerEvent: {}
+[11.522891] (-) TimerEvent: {}
+[11.626413] (-) TimerEvent: {}
+[11.671291] (waverunner_package) StdoutLine: {'line': b"reading manifest file '../../build/waverunner_package/waverunner_package.egg-info/SOURCES.txt'\n"}
+[11.683418] (waverunner_package) StdoutLine: {'line': b"writing manifest file '../../build/waverunner_package/waverunner_package.egg-info/SOURCES.txt'\n"}
+[11.685367] (waverunner_package) StdoutLine: {'line': b'running build\n'}
+[11.686206] (waverunner_package) StdoutLine: {'line': b'running build_py\n'}
+[11.688995] (waverunner_package) StdoutLine: {'line': b'running install\n'}
+[11.691607] (waverunner_package) StdoutLine: {'line': b'running install_lib\n'}
+[11.700900] (waverunner_package) StdoutLine: {'line': b'byte-compiling /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/waverunner_package/lib/python3.6/site-packages/waverunner_package/waverunner_encoder.py to waverunner_encoder.cpython-36.pyc\n'}
+[11.705508] (waverunner_package) StdoutLine: {'line': b'running install_data\n'}
+[11.709602] (waverunner_package) StdoutLine: {'line': b'running install_egg_info\n'}
+[11.723599] (waverunner_package) StdoutLine: {'line': b"removing '/home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/waverunner_package/lib/python3.6/site-packages/waverunner_package-0.0.0-py3.6.egg-info' (and everything under it)\n"}
+[11.725801] (waverunner_package) StdoutLine: {'line': b'Copying ../../build/waverunner_package/waverunner_package.egg-info to /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/waverunner_package/lib/python3.6/site-packages/waverunner_package-0.0.0-py3.6.egg-info\n'}
+[11.726664] (-) TimerEvent: {}
+[11.732945] (waverunner_package) StdoutLine: {'line': b'running install_scripts\n'}
+[11.826943] (-) TimerEvent: {}
+[11.862858] (waverunner_package) StdoutLine: {'line': b'Installing encoder script to /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/waverunner_package/lib/waverunner_package\n'}
+[11.864219] (waverunner_package) StdoutLine: {'line': b'Installing listener script to /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/waverunner_package/lib/waverunner_package\n'}
+[11.865317] (waverunner_package) StdoutLine: {'line': b'Installing talker script to /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/waverunner_package/lib/waverunner_package\n'}
+[11.867601] (waverunner_package) StdoutLine: {'line': b"writing list of installed files to '/home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/build/waverunner_package/install.log'\n"}
+[11.927797] (-) TimerEvent: {}
+[11.994262] (waverunner_package) CommandEnded: {'returncode': 0}
+[12.029286] (-) TimerEvent: {}
+[12.068240] (waverunner_package) JobEnded: {'identifier': 'waverunner_package', 'rc': 0}
+[12.085382] (-) EventReactorShutdown: {}

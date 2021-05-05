@@ -20,10 +20,10 @@ message_pkg::msg::dds_::Encoder_TypeSupportMetaHolder::Encoder_TypeSupportMetaHo
     copyIn = (DDS::OpenSplice::cxxCopyIn) __message_pkg_msg_dds__Encoder___copyIn;
     copyOut = (DDS::OpenSplice::cxxCopyOut) __message_pkg_msg_dds__Encoder___copyOut;
     metaDescriptorArrLength = 3;
-    metaDescriptorLength = 337;
+    metaDescriptorLength = 246;
     const char *tmp[] = {"<MetaData version=\"1.0.0\"><Module name=\"message_pkg\"><Module name=\"msg\"><Module name=\"dds_\"><Struct name=\"Encoder_\">",
-"<Member name=\"fl_\"><LongLong/></Member><Member name=\"fr_\"><LongLong/></Member><Member name=\"rl_\">",
-"<LongLong/></Member><Member name=\"rr_\"><LongLong/></Member></Struct></Module></Module></Module></MetaData>"};
+"<Member name=\"encodervalue_\"><Array size=\"4\"><Long/></Array></Member></Struct></Module></Module></Module>",
+"</MetaData>"};
     metaDescriptor = new const char*[metaDescriptorArrLength];
     memcpy(metaDescriptor, tmp, sizeof(tmp));
 }

@@ -21,8 +21,11 @@ setup(
     entry_points={
         'console_scripts': [
                 'talker = waverunner_package.waverunner_publisher:main',
-                'listener = waverunner_package.waverunner_subscriber_test:main',
+                'listener = waverunner_package.waverunner_listener:main',
                 'encoder = waverunner_package.waverunner_encoder:main',
+                'mecanum = waverunner_package.waverunner_mecanum_drive:main',
+                'stewart = waverunner_package.waverunner_stewart:main',
+
         ],
     },
 )

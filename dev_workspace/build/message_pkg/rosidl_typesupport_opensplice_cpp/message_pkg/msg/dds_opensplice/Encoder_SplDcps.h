@@ -1,5 +1,5 @@
-#ifndef H_D92B605B9C88A20D60DF9EA7B81AF0F0_Encoder_SPLTYPES_H
-#define H_D92B605B9C88A20D60DF9EA7B81AF0F0_Encoder_SPLTYPES_H
+#ifndef H_644F7DC3DAA2A8A20CB04B8D67C2BA53_Encoder_SPLTYPES_H
+#define H_644F7DC3DAA2A8A20CB04B8D67C2BA53_Encoder_SPLTYPES_H
 
 #include <c_base.h>
 #include <c_misc.h>
@@ -25,10 +25,7 @@ struct _message_pkg_msg_dds__Encoder_ ;
 extern  v_copyin_result __message_pkg_msg_dds__Encoder___copyIn(c_base base, const struct message_pkg::msg::dds_::Encoder_ *from, struct _message_pkg_msg_dds__Encoder_ *to);
 extern  void __message_pkg_msg_dds__Encoder___copyOut(const void *_from, void *_to);
 struct _message_pkg_msg_dds__Encoder_ {
-    c_longlong fl_;
-    c_longlong fr_;
-    c_longlong rl_;
-    c_longlong rr_;
+    c_long encodervalue_[4];
 };
 
 #undef OS_API

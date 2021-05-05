@@ -32,14 +32,10 @@ cdr_serialize(
   const message_pkg::msg::Encoder & ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  // Member: fl
-  cdr << ros_message.fl;
-  // Member: fr
-  cdr << ros_message.fr;
-  // Member: rl
-  cdr << ros_message.rl;
-  // Member: rr
-  cdr << ros_message.rr;
+  // Member: encodervalue
+  {
+    cdr << ros_message.encodervalue;
+  }
   return true;
 }
 
@@ -49,17 +45,10 @@ cdr_deserialize(
   eprosima::fastcdr::Cdr & cdr,
   message_pkg::msg::Encoder & ros_message)
 {
-  // Member: fl
-  cdr >> ros_message.fl;
-
-  // Member: fr
-  cdr >> ros_message.fr;
-
-  // Member: rl
-  cdr >> ros_message.rl;
-
-  // Member: rr
-  cdr >> ros_message.rr;
+  // Member: encodervalue
+  {
+    cdr >> ros_message.encodervalue;
+  }
 
   return true;
 }
@@ -77,28 +66,11 @@ get_serialized_size(
   (void)padding;
   (void)wchar_size;
 
-  // Member: fl
+  // Member: encodervalue
   {
-    size_t item_size = sizeof(ros_message.fl);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // Member: fr
-  {
-    size_t item_size = sizeof(ros_message.fr);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // Member: rl
-  {
-    size_t item_size = sizeof(ros_message.rl);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // Member: rr
-  {
-    size_t item_size = sizeof(ros_message.rr);
-    current_alignment += item_size +
+    size_t array_size = 4;
+    size_t item_size = sizeof(ros_message.encodervalue[0]);
+    current_alignment += array_size * item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
 
@@ -120,36 +92,12 @@ max_serialized_size_Encoder(
   (void)full_bounded;
 
 
-  // Member: fl
+  // Member: encodervalue
   {
-    size_t array_size = 1;
+    size_t array_size = 4;
 
-    current_alignment += array_size * sizeof(uint64_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
-  }
-
-  // Member: fr
-  {
-    size_t array_size = 1;
-
-    current_alignment += array_size * sizeof(uint64_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
-  }
-
-  // Member: rl
-  {
-    size_t array_size = 1;
-
-    current_alignment += array_size * sizeof(uint64_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
-  }
-
-  // Member: rr
-  {
-    size_t array_size = 1;
-
-    current_alignment += array_size * sizeof(uint64_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
   return current_alignment - initial_alignment;

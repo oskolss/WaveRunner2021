@@ -59,6 +59,18 @@ CMakeFiles/message_pkg__cpp: rosidl_generator_cpp/message_pkg/msg/num__traits.hp
 CMakeFiles/message_pkg__cpp: rosidl_generator_cpp/message_pkg/msg/encoder.hpp
 CMakeFiles/message_pkg__cpp: rosidl_generator_cpp/message_pkg/msg/encoder__struct.hpp
 CMakeFiles/message_pkg__cpp: rosidl_generator_cpp/message_pkg/msg/encoder__traits.hpp
+CMakeFiles/message_pkg__cpp: rosidl_generator_cpp/message_pkg/msg/motor_values.hpp
+CMakeFiles/message_pkg__cpp: rosidl_generator_cpp/message_pkg/msg/motor_values__struct.hpp
+CMakeFiles/message_pkg__cpp: rosidl_generator_cpp/message_pkg/msg/motor_values__traits.hpp
+CMakeFiles/message_pkg__cpp: rosidl_generator_cpp/message_pkg/msg/servo_values.hpp
+CMakeFiles/message_pkg__cpp: rosidl_generator_cpp/message_pkg/msg/servo_values__struct.hpp
+CMakeFiles/message_pkg__cpp: rosidl_generator_cpp/message_pkg/msg/servo_values__traits.hpp
+CMakeFiles/message_pkg__cpp: rosidl_generator_cpp/message_pkg/msg/input_values.hpp
+CMakeFiles/message_pkg__cpp: rosidl_generator_cpp/message_pkg/msg/input_values__struct.hpp
+CMakeFiles/message_pkg__cpp: rosidl_generator_cpp/message_pkg/msg/input_values__traits.hpp
+CMakeFiles/message_pkg__cpp: rosidl_generator_cpp/message_pkg/msg/mecanum_input.hpp
+CMakeFiles/message_pkg__cpp: rosidl_generator_cpp/message_pkg/msg/mecanum_input__struct.hpp
+CMakeFiles/message_pkg__cpp: rosidl_generator_cpp/message_pkg/msg/mecanum_input__traits.hpp
 CMakeFiles/message_pkg__cpp: rosidl_generator_cpp/message_pkg/srv/add_three_ints.hpp
 CMakeFiles/message_pkg__cpp: rosidl_generator_cpp/message_pkg/srv/add_three_ints__struct.hpp
 CMakeFiles/message_pkg__cpp: rosidl_generator_cpp/message_pkg/srv/add_three_ints__traits.hpp
@@ -76,6 +88,10 @@ rosidl_generator_cpp/message_pkg/msg/num.hpp: /opt/ros/dashing/share/rosidl_gene
 rosidl_generator_cpp/message_pkg/msg/num.hpp: /opt/ros/dashing/share/rosidl_generator_cpp/resource/srv__traits.hpp.em
 rosidl_generator_cpp/message_pkg/msg/num.hpp: rosidl_adapter/message_pkg/msg/Num.idl
 rosidl_generator_cpp/message_pkg/msg/num.hpp: rosidl_adapter/message_pkg/msg/Encoder.idl
+rosidl_generator_cpp/message_pkg/msg/num.hpp: rosidl_adapter/message_pkg/msg/MotorValues.idl
+rosidl_generator_cpp/message_pkg/msg/num.hpp: rosidl_adapter/message_pkg/msg/ServoValues.idl
+rosidl_generator_cpp/message_pkg/msg/num.hpp: rosidl_adapter/message_pkg/msg/InputValues.idl
+rosidl_generator_cpp/message_pkg/msg/num.hpp: rosidl_adapter/message_pkg/msg/MecanumInput.idl
 rosidl_generator_cpp/message_pkg/msg/num.hpp: rosidl_adapter/message_pkg/srv/AddThreeInts.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/build/message_pkg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
 	/usr/bin/python3 /opt/ros/dashing/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/build/message_pkg/rosidl_generator_cpp__arguments.json
@@ -95,6 +111,42 @@ rosidl_generator_cpp/message_pkg/msg/encoder__struct.hpp: rosidl_generator_cpp/m
 rosidl_generator_cpp/message_pkg/msg/encoder__traits.hpp: rosidl_generator_cpp/message_pkg/msg/num.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/message_pkg/msg/encoder__traits.hpp
 
+rosidl_generator_cpp/message_pkg/msg/motor_values.hpp: rosidl_generator_cpp/message_pkg/msg/num.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/message_pkg/msg/motor_values.hpp
+
+rosidl_generator_cpp/message_pkg/msg/motor_values__struct.hpp: rosidl_generator_cpp/message_pkg/msg/num.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/message_pkg/msg/motor_values__struct.hpp
+
+rosidl_generator_cpp/message_pkg/msg/motor_values__traits.hpp: rosidl_generator_cpp/message_pkg/msg/num.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/message_pkg/msg/motor_values__traits.hpp
+
+rosidl_generator_cpp/message_pkg/msg/servo_values.hpp: rosidl_generator_cpp/message_pkg/msg/num.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/message_pkg/msg/servo_values.hpp
+
+rosidl_generator_cpp/message_pkg/msg/servo_values__struct.hpp: rosidl_generator_cpp/message_pkg/msg/num.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/message_pkg/msg/servo_values__struct.hpp
+
+rosidl_generator_cpp/message_pkg/msg/servo_values__traits.hpp: rosidl_generator_cpp/message_pkg/msg/num.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/message_pkg/msg/servo_values__traits.hpp
+
+rosidl_generator_cpp/message_pkg/msg/input_values.hpp: rosidl_generator_cpp/message_pkg/msg/num.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/message_pkg/msg/input_values.hpp
+
+rosidl_generator_cpp/message_pkg/msg/input_values__struct.hpp: rosidl_generator_cpp/message_pkg/msg/num.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/message_pkg/msg/input_values__struct.hpp
+
+rosidl_generator_cpp/message_pkg/msg/input_values__traits.hpp: rosidl_generator_cpp/message_pkg/msg/num.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/message_pkg/msg/input_values__traits.hpp
+
+rosidl_generator_cpp/message_pkg/msg/mecanum_input.hpp: rosidl_generator_cpp/message_pkg/msg/num.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/message_pkg/msg/mecanum_input.hpp
+
+rosidl_generator_cpp/message_pkg/msg/mecanum_input__struct.hpp: rosidl_generator_cpp/message_pkg/msg/num.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/message_pkg/msg/mecanum_input__struct.hpp
+
+rosidl_generator_cpp/message_pkg/msg/mecanum_input__traits.hpp: rosidl_generator_cpp/message_pkg/msg/num.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/message_pkg/msg/mecanum_input__traits.hpp
+
 rosidl_generator_cpp/message_pkg/srv/add_three_ints.hpp: rosidl_generator_cpp/message_pkg/msg/num.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/message_pkg/srv/add_three_ints.hpp
 
@@ -111,6 +163,18 @@ message_pkg__cpp: rosidl_generator_cpp/message_pkg/msg/num__traits.hpp
 message_pkg__cpp: rosidl_generator_cpp/message_pkg/msg/encoder.hpp
 message_pkg__cpp: rosidl_generator_cpp/message_pkg/msg/encoder__struct.hpp
 message_pkg__cpp: rosidl_generator_cpp/message_pkg/msg/encoder__traits.hpp
+message_pkg__cpp: rosidl_generator_cpp/message_pkg/msg/motor_values.hpp
+message_pkg__cpp: rosidl_generator_cpp/message_pkg/msg/motor_values__struct.hpp
+message_pkg__cpp: rosidl_generator_cpp/message_pkg/msg/motor_values__traits.hpp
+message_pkg__cpp: rosidl_generator_cpp/message_pkg/msg/servo_values.hpp
+message_pkg__cpp: rosidl_generator_cpp/message_pkg/msg/servo_values__struct.hpp
+message_pkg__cpp: rosidl_generator_cpp/message_pkg/msg/servo_values__traits.hpp
+message_pkg__cpp: rosidl_generator_cpp/message_pkg/msg/input_values.hpp
+message_pkg__cpp: rosidl_generator_cpp/message_pkg/msg/input_values__struct.hpp
+message_pkg__cpp: rosidl_generator_cpp/message_pkg/msg/input_values__traits.hpp
+message_pkg__cpp: rosidl_generator_cpp/message_pkg/msg/mecanum_input.hpp
+message_pkg__cpp: rosidl_generator_cpp/message_pkg/msg/mecanum_input__struct.hpp
+message_pkg__cpp: rosidl_generator_cpp/message_pkg/msg/mecanum_input__traits.hpp
 message_pkg__cpp: rosidl_generator_cpp/message_pkg/srv/add_three_ints.hpp
 message_pkg__cpp: rosidl_generator_cpp/message_pkg/srv/add_three_ints__struct.hpp
 message_pkg__cpp: rosidl_generator_cpp/message_pkg/srv/add_three_ints__traits.hpp

@@ -1,4 +1,1 @@
-int64 fl
-int64 fr
-int64 rl
-int64 rr
+int32[4] encodervalue

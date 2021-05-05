@@ -20,10 +20,7 @@ extern "C"
 // Struct defined in msg/Encoder in the package message_pkg.
 typedef struct message_pkg__msg__Encoder
 {
-  int64_t fl;
-  int64_t fr;
-  int64_t rl;
-  int64_t rr;
+  int32_t encodervalue[4];
 } message_pkg__msg__Encoder;
 
 // Struct for a sequence of message_pkg__msg__Encoder.

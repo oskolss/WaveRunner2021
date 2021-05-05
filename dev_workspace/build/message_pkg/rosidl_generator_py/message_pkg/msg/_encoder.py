@@ -5,6 +5,9 @@
 
 # Import statements for member types
 
+# Member 'encodervalue'
+import numpy  # noqa: E402, I100
+
 import rosidl_parser.definition  # noqa: E402, I100
 
 
@@ -53,34 +56,26 @@ class Encoder(metaclass=Metaclass_Encoder):
     """Message class 'Encoder'."""
 
     __slots__ = [
-        '_fl',
-        '_fr',
-        '_rl',
-        '_rr',
+        '_encodervalue',
     ]
 
     _fields_and_field_types = {
-        'fl': 'int64',
-        'fr': 'int64',
-        'rl': 'int64',
-        'rr': 'int64',
+        'encodervalue': 'int32[4]',
     }
 
     SLOT_TYPES = (
-        rosidl_parser.definition.BasicType('int64'),  # noqa: E501
-        rosidl_parser.definition.BasicType('int64'),  # noqa: E501
-        rosidl_parser.definition.BasicType('int64'),  # noqa: E501
-        rosidl_parser.definition.BasicType('int64'),  # noqa: E501
+        rosidl_parser.definition.Array(rosidl_parser.definition.BasicType('int32'), 4),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        self.fl = kwargs.get('fl', int())
-        self.fr = kwargs.get('fr', int())
-        self.rl = kwargs.get('rl', int())
-        self.rr = kwargs.get('rr', int())
+        if 'encodervalue' not in kwargs:
+            self.encodervalue = numpy.zeros(4, dtype=numpy.int32)
+        else:
+            self.encodervalue = numpy.array(kwargs.get('encodervalue'), dtype=numpy.int32)
+            assert self.encodervalue.shape == (4, )
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -111,13 +106,7 @@ class Encoder(metaclass=Metaclass_Encoder):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
-        if self.fl != other.fl:
-            return False
-        if self.fr != other.fr:
-            return False
-        if self.rl != other.rl:
-            return False
-        if self.rr != other.rr:
+        if all(self.encodervalue != other.encodervalue):
             return False
         return True
 
@@ -127,61 +116,32 @@ class Encoder(metaclass=Metaclass_Encoder):
         return copy(cls._fields_and_field_types)
 
     @property
-    def fl(self):
-        """Message field 'fl'."""
-        return self._fl
+    def encodervalue(self):
+        """Message field 'encodervalue'."""
+        return self._encodervalue
 
-    @fl.setter
-    def fl(self, value):
+    @encodervalue.setter
+    def encodervalue(self, value):
+        if isinstance(value, numpy.ndarray):
+            assert value.dtype == numpy.int32, \
+                "The 'encodervalue' numpy.ndarray() must have the dtype of 'numpy.int32'"
+            assert value.size == 4, \
+                "The 'encodervalue' numpy.ndarray() must have a size of 4"
+            self._encodervalue = value
+            return
         if __debug__:
+            from collections.abc import Sequence
+            from collections.abc import Set
+            from collections import UserList
+            from collections import UserString
             assert \
-                isinstance(value, int), \
-                "The 'fl' field must be of type 'int'"
-            assert value >= -9223372036854775808 and value < 9223372036854775808, \
-                "The 'fl' field must be an integer in [-9223372036854775808, 9223372036854775807]"
-        self._fl = value
-
-    @property
-    def fr(self):
-        """Message field 'fr'."""
-        return self._fr
-
-    @fr.setter
-    def fr(self, value):
-        if __debug__:
-            assert \
-                isinstance(value, int), \
-                "The 'fr' field must be of type 'int'"
-            assert value >= -9223372036854775808 and value < 9223372036854775808, \
-                "The 'fr' field must be an integer in [-9223372036854775808, 9223372036854775807]"
-        self._fr = value
-
-    @property
-    def rl(self):
-        """Message field 'rl'."""
-        return self._rl
-
-    @rl.setter
-    def rl(self, value):
-        if __debug__:
-            assert \
-                isinstance(value, int), \
-                "The 'rl' field must be of type 'int'"
-            assert value >= -9223372036854775808 and value < 9223372036854775808, \
-                "The 'rl' field must be an integer in [-9223372036854775808, 9223372036854775807]"
-        self._rl = value
-
-    @property
-    def rr(self):
-        """Message field 'rr'."""
-        return self._rr
-
-    @rr.setter
-    def rr(self, value):
-        if __debug__:
-            assert \
-                isinstance(value, int), \
-                "The 'rr' field must be of type 'int'"
-            assert value >= -9223372036854775808 and value < 9223372036854775808, \
-                "The 'rr' field must be an integer in [-9223372036854775808, 9223372036854775807]"
-        self._rr = value
+                ((isinstance(value, Sequence) or
+                  isinstance(value, Set) or
+                  isinstance(value, UserList)) and
+                 not isinstance(value, str) and
+                 not isinstance(value, UserString) and
+                 len(value) == 4 and
+                 all(isinstance(v, int) for v in value) and
+                 all(val >= -2147483648 and val < 2147483648 for val in value)), \
+                "The 'encodervalue' field must be a set or sequence with length 4 and each value of type 'int' and each integer in [-2147483648, 2147483647]"
+        self._encodervalue = numpy.array(value, dtype=numpy.int32)

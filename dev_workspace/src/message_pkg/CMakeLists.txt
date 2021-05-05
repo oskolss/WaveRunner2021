@@ -41,6 +41,10 @@ find_package(rosidl_default_generators REQUIRED)
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Num.msg"
   "msg/Encoder.msg"
+  "msg/MotorValues.msg"
+  "msg/ServoValues.msg"
+  "msg/InputValues.msg"
+  "msg/MecanumInput.msg"
   "srv/AddThreeInts.srv"
  )
 

@@ -58,11 +58,19 @@ message_pkg__py/CMakeFiles/message_pkg__py: rosidl_generator_py/message_pkg/_mes
 message_pkg__py/CMakeFiles/message_pkg__py: rosidl_generator_py/message_pkg/_message_pkg_s.ep.rosidl_typesupport_opensplice_c.c
 message_pkg__py/CMakeFiles/message_pkg__py: rosidl_generator_py/message_pkg/msg/_num.py
 message_pkg__py/CMakeFiles/message_pkg__py: rosidl_generator_py/message_pkg/msg/_encoder.py
+message_pkg__py/CMakeFiles/message_pkg__py: rosidl_generator_py/message_pkg/msg/_motor_values.py
+message_pkg__py/CMakeFiles/message_pkg__py: rosidl_generator_py/message_pkg/msg/_servo_values.py
+message_pkg__py/CMakeFiles/message_pkg__py: rosidl_generator_py/message_pkg/msg/_input_values.py
+message_pkg__py/CMakeFiles/message_pkg__py: rosidl_generator_py/message_pkg/msg/_mecanum_input.py
 message_pkg__py/CMakeFiles/message_pkg__py: rosidl_generator_py/message_pkg/srv/_add_three_ints.py
 message_pkg__py/CMakeFiles/message_pkg__py: rosidl_generator_py/message_pkg/msg/__init__.py
 message_pkg__py/CMakeFiles/message_pkg__py: rosidl_generator_py/message_pkg/srv/__init__.py
 message_pkg__py/CMakeFiles/message_pkg__py: rosidl_generator_py/message_pkg/msg/_num_s.c
 message_pkg__py/CMakeFiles/message_pkg__py: rosidl_generator_py/message_pkg/msg/_encoder_s.c
+message_pkg__py/CMakeFiles/message_pkg__py: rosidl_generator_py/message_pkg/msg/_motor_values_s.c
+message_pkg__py/CMakeFiles/message_pkg__py: rosidl_generator_py/message_pkg/msg/_servo_values_s.c
+message_pkg__py/CMakeFiles/message_pkg__py: rosidl_generator_py/message_pkg/msg/_input_values_s.c
+message_pkg__py/CMakeFiles/message_pkg__py: rosidl_generator_py/message_pkg/msg/_mecanum_input_s.c
 message_pkg__py/CMakeFiles/message_pkg__py: rosidl_generator_py/message_pkg/srv/_add_three_ints_s.c
 
 
@@ -81,6 +89,10 @@ rosidl_generator_py/message_pkg/_message_pkg_s.ep.rosidl_typesupport_c.c: /opt/r
 rosidl_generator_py/message_pkg/_message_pkg_s.ep.rosidl_typesupport_c.c: /opt/ros/dashing/share/rosidl_generator_py/resource/_srv.py.em
 rosidl_generator_py/message_pkg/_message_pkg_s.ep.rosidl_typesupport_c.c: rosidl_adapter/message_pkg/msg/Num.idl
 rosidl_generator_py/message_pkg/_message_pkg_s.ep.rosidl_typesupport_c.c: rosidl_adapter/message_pkg/msg/Encoder.idl
+rosidl_generator_py/message_pkg/_message_pkg_s.ep.rosidl_typesupport_c.c: rosidl_adapter/message_pkg/msg/MotorValues.idl
+rosidl_generator_py/message_pkg/_message_pkg_s.ep.rosidl_typesupport_c.c: rosidl_adapter/message_pkg/msg/ServoValues.idl
+rosidl_generator_py/message_pkg/_message_pkg_s.ep.rosidl_typesupport_c.c: rosidl_adapter/message_pkg/msg/InputValues.idl
+rosidl_generator_py/message_pkg/_message_pkg_s.ep.rosidl_typesupport_c.c: rosidl_adapter/message_pkg/msg/MecanumInput.idl
 rosidl_generator_py/message_pkg/_message_pkg_s.ep.rosidl_typesupport_c.c: rosidl_adapter/message_pkg/srv/AddThreeInts.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/build/message_pkg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code for ROS interfaces"
 	cd /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/build/message_pkg/message_pkg__py && /usr/bin/python3 /opt/ros/dashing/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py --generator-arguments-file /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/build/message_pkg/rosidl_generator_py__arguments.json --typesupport-impls "rosidl_typesupport_c;rosidl_typesupport_fastrtps_c;rosidl_typesupport_opensplice_c"
@@ -97,6 +109,18 @@ rosidl_generator_py/message_pkg/msg/_num.py: rosidl_generator_py/message_pkg/_me
 rosidl_generator_py/message_pkg/msg/_encoder.py: rosidl_generator_py/message_pkg/_message_pkg_s.ep.rosidl_typesupport_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/message_pkg/msg/_encoder.py
 
+rosidl_generator_py/message_pkg/msg/_motor_values.py: rosidl_generator_py/message_pkg/_message_pkg_s.ep.rosidl_typesupport_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/message_pkg/msg/_motor_values.py
+
+rosidl_generator_py/message_pkg/msg/_servo_values.py: rosidl_generator_py/message_pkg/_message_pkg_s.ep.rosidl_typesupport_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/message_pkg/msg/_servo_values.py
+
+rosidl_generator_py/message_pkg/msg/_input_values.py: rosidl_generator_py/message_pkg/_message_pkg_s.ep.rosidl_typesupport_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/message_pkg/msg/_input_values.py
+
+rosidl_generator_py/message_pkg/msg/_mecanum_input.py: rosidl_generator_py/message_pkg/_message_pkg_s.ep.rosidl_typesupport_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/message_pkg/msg/_mecanum_input.py
+
 rosidl_generator_py/message_pkg/srv/_add_three_ints.py: rosidl_generator_py/message_pkg/_message_pkg_s.ep.rosidl_typesupport_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/message_pkg/srv/_add_three_ints.py
 
@@ -112,6 +136,18 @@ rosidl_generator_py/message_pkg/msg/_num_s.c: rosidl_generator_py/message_pkg/_m
 rosidl_generator_py/message_pkg/msg/_encoder_s.c: rosidl_generator_py/message_pkg/_message_pkg_s.ep.rosidl_typesupport_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/message_pkg/msg/_encoder_s.c
 
+rosidl_generator_py/message_pkg/msg/_motor_values_s.c: rosidl_generator_py/message_pkg/_message_pkg_s.ep.rosidl_typesupport_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/message_pkg/msg/_motor_values_s.c
+
+rosidl_generator_py/message_pkg/msg/_servo_values_s.c: rosidl_generator_py/message_pkg/_message_pkg_s.ep.rosidl_typesupport_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/message_pkg/msg/_servo_values_s.c
+
+rosidl_generator_py/message_pkg/msg/_input_values_s.c: rosidl_generator_py/message_pkg/_message_pkg_s.ep.rosidl_typesupport_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/message_pkg/msg/_input_values_s.c
+
+rosidl_generator_py/message_pkg/msg/_mecanum_input_s.c: rosidl_generator_py/message_pkg/_message_pkg_s.ep.rosidl_typesupport_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/message_pkg/msg/_mecanum_input_s.c
+
 rosidl_generator_py/message_pkg/srv/_add_three_ints_s.c: rosidl_generator_py/message_pkg/_message_pkg_s.ep.rosidl_typesupport_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/message_pkg/srv/_add_three_ints_s.c
 
@@ -121,11 +157,19 @@ message_pkg__py: rosidl_generator_py/message_pkg/_message_pkg_s.ep.rosidl_typesu
 message_pkg__py: rosidl_generator_py/message_pkg/_message_pkg_s.ep.rosidl_typesupport_opensplice_c.c
 message_pkg__py: rosidl_generator_py/message_pkg/msg/_num.py
 message_pkg__py: rosidl_generator_py/message_pkg/msg/_encoder.py
+message_pkg__py: rosidl_generator_py/message_pkg/msg/_motor_values.py
+message_pkg__py: rosidl_generator_py/message_pkg/msg/_servo_values.py
+message_pkg__py: rosidl_generator_py/message_pkg/msg/_input_values.py
+message_pkg__py: rosidl_generator_py/message_pkg/msg/_mecanum_input.py
 message_pkg__py: rosidl_generator_py/message_pkg/srv/_add_three_ints.py
 message_pkg__py: rosidl_generator_py/message_pkg/msg/__init__.py
 message_pkg__py: rosidl_generator_py/message_pkg/srv/__init__.py
 message_pkg__py: rosidl_generator_py/message_pkg/msg/_num_s.c
 message_pkg__py: rosidl_generator_py/message_pkg/msg/_encoder_s.c
+message_pkg__py: rosidl_generator_py/message_pkg/msg/_motor_values_s.c
+message_pkg__py: rosidl_generator_py/message_pkg/msg/_servo_values_s.c
+message_pkg__py: rosidl_generator_py/message_pkg/msg/_input_values_s.c
+message_pkg__py: rosidl_generator_py/message_pkg/msg/_mecanum_input_s.c
 message_pkg__py: rosidl_generator_py/message_pkg/srv/_add_three_ints_s.c
 message_pkg__py: message_pkg__py/CMakeFiles/message_pkg__py.dir/build.make
 

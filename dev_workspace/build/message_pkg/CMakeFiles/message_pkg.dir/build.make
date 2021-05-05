@@ -55,6 +55,10 @@ include CMakeFiles/message_pkg.dir/progress.make
 
 CMakeFiles/message_pkg: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/src/message_pkg/msg/Num.msg
 CMakeFiles/message_pkg: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/src/message_pkg/msg/Encoder.msg
+CMakeFiles/message_pkg: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/src/message_pkg/msg/MotorValues.msg
+CMakeFiles/message_pkg: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/src/message_pkg/msg/ServoValues.msg
+CMakeFiles/message_pkg: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/src/message_pkg/msg/InputValues.msg
+CMakeFiles/message_pkg: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/src/message_pkg/msg/MecanumInput.msg
 CMakeFiles/message_pkg: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/src/message_pkg/srv/AddThreeInts.srv
 CMakeFiles/message_pkg: rosidl_cmake/srv/AddThreeInts_Request.msg
 CMakeFiles/message_pkg: rosidl_cmake/srv/AddThreeInts_Response.msg

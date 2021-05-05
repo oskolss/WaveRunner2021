@@ -55,6 +55,10 @@ include CMakeFiles/message_pkg__dds_opensplice_idl.dir/progress.make
 
 CMakeFiles/message_pkg__dds_opensplice_idl: rosidl_generator_dds_idl/message_pkg/msg/dds_opensplice/Num_.idl
 CMakeFiles/message_pkg__dds_opensplice_idl: rosidl_generator_dds_idl/message_pkg/msg/dds_opensplice/Encoder_.idl
+CMakeFiles/message_pkg__dds_opensplice_idl: rosidl_generator_dds_idl/message_pkg/msg/dds_opensplice/MotorValues_.idl
+CMakeFiles/message_pkg__dds_opensplice_idl: rosidl_generator_dds_idl/message_pkg/msg/dds_opensplice/ServoValues_.idl
+CMakeFiles/message_pkg__dds_opensplice_idl: rosidl_generator_dds_idl/message_pkg/msg/dds_opensplice/InputValues_.idl
+CMakeFiles/message_pkg__dds_opensplice_idl: rosidl_generator_dds_idl/message_pkg/msg/dds_opensplice/MecanumInput_.idl
 CMakeFiles/message_pkg__dds_opensplice_idl: rosidl_generator_dds_idl/message_pkg/srv/dds_opensplice/AddThreeInts_.idl
 
 
@@ -68,6 +72,10 @@ rosidl_generator_dds_idl/message_pkg/msg/dds_opensplice/Num_.idl: /opt/ros/dashi
 rosidl_generator_dds_idl/message_pkg/msg/dds_opensplice/Num_.idl: /opt/ros/dashing/share/rosidl_typesupport_opensplice_cpp/resource/service_response_wrapper.idl.em
 rosidl_generator_dds_idl/message_pkg/msg/dds_opensplice/Num_.idl: rosidl_adapter/message_pkg/msg/Num.idl
 rosidl_generator_dds_idl/message_pkg/msg/dds_opensplice/Num_.idl: rosidl_adapter/message_pkg/msg/Encoder.idl
+rosidl_generator_dds_idl/message_pkg/msg/dds_opensplice/Num_.idl: rosidl_adapter/message_pkg/msg/MotorValues.idl
+rosidl_generator_dds_idl/message_pkg/msg/dds_opensplice/Num_.idl: rosidl_adapter/message_pkg/msg/ServoValues.idl
+rosidl_generator_dds_idl/message_pkg/msg/dds_opensplice/Num_.idl: rosidl_adapter/message_pkg/msg/InputValues.idl
+rosidl_generator_dds_idl/message_pkg/msg/dds_opensplice/Num_.idl: rosidl_adapter/message_pkg/msg/MecanumInput.idl
 rosidl_generator_dds_idl/message_pkg/msg/dds_opensplice/Num_.idl: rosidl_adapter/message_pkg/srv/AddThreeInts.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/build/message_pkg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating DDS interfaces"
 	/usr/bin/python3 /opt/ros/dashing/lib/rosidl_generator_dds_idl/rosidl_generator_dds_idl --additional-service-templates /opt/ros/dashing/share/rosidl_typesupport_opensplice_cpp/resource/service_request_wrapper.idl.em /opt/ros/dashing/share/rosidl_typesupport_opensplice_cpp/resource/service_response_wrapper.idl.em --generator-arguments-file /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/build/message_pkg/rosidl_generator_dds_idl__dds_opensplice__arguments.json --subfolders dds_opensplice --extension rosidl_typesupport_opensplice_cpp.rosidl_generator_dds_idl_extension
@@ -75,12 +83,28 @@ rosidl_generator_dds_idl/message_pkg/msg/dds_opensplice/Num_.idl: rosidl_adapter
 rosidl_generator_dds_idl/message_pkg/msg/dds_opensplice/Encoder_.idl: rosidl_generator_dds_idl/message_pkg/msg/dds_opensplice/Num_.idl
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_dds_idl/message_pkg/msg/dds_opensplice/Encoder_.idl
 
+rosidl_generator_dds_idl/message_pkg/msg/dds_opensplice/MotorValues_.idl: rosidl_generator_dds_idl/message_pkg/msg/dds_opensplice/Num_.idl
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_dds_idl/message_pkg/msg/dds_opensplice/MotorValues_.idl
+
+rosidl_generator_dds_idl/message_pkg/msg/dds_opensplice/ServoValues_.idl: rosidl_generator_dds_idl/message_pkg/msg/dds_opensplice/Num_.idl
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_dds_idl/message_pkg/msg/dds_opensplice/ServoValues_.idl
+
+rosidl_generator_dds_idl/message_pkg/msg/dds_opensplice/InputValues_.idl: rosidl_generator_dds_idl/message_pkg/msg/dds_opensplice/Num_.idl
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_dds_idl/message_pkg/msg/dds_opensplice/InputValues_.idl
+
+rosidl_generator_dds_idl/message_pkg/msg/dds_opensplice/MecanumInput_.idl: rosidl_generator_dds_idl/message_pkg/msg/dds_opensplice/Num_.idl
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_dds_idl/message_pkg/msg/dds_opensplice/MecanumInput_.idl
+
 rosidl_generator_dds_idl/message_pkg/srv/dds_opensplice/AddThreeInts_.idl: rosidl_generator_dds_idl/message_pkg/msg/dds_opensplice/Num_.idl
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_dds_idl/message_pkg/srv/dds_opensplice/AddThreeInts_.idl
 
 message_pkg__dds_opensplice_idl: CMakeFiles/message_pkg__dds_opensplice_idl
 message_pkg__dds_opensplice_idl: rosidl_generator_dds_idl/message_pkg/msg/dds_opensplice/Num_.idl
 message_pkg__dds_opensplice_idl: rosidl_generator_dds_idl/message_pkg/msg/dds_opensplice/Encoder_.idl
+message_pkg__dds_opensplice_idl: rosidl_generator_dds_idl/message_pkg/msg/dds_opensplice/MotorValues_.idl
+message_pkg__dds_opensplice_idl: rosidl_generator_dds_idl/message_pkg/msg/dds_opensplice/ServoValues_.idl
+message_pkg__dds_opensplice_idl: rosidl_generator_dds_idl/message_pkg/msg/dds_opensplice/InputValues_.idl
+message_pkg__dds_opensplice_idl: rosidl_generator_dds_idl/message_pkg/msg/dds_opensplice/MecanumInput_.idl
 message_pkg__dds_opensplice_idl: rosidl_generator_dds_idl/message_pkg/srv/dds_opensplice/AddThreeInts_.idl
 message_pkg__dds_opensplice_idl: CMakeFiles/message_pkg__dds_opensplice_idl.dir/build.make
 

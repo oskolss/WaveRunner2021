@@ -24,6 +24,38 @@ CXX_INCLUDES = -I/home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/b
 
 # Custom flags: CMakeFiles/message_pkg__rosidl_typesupport_opensplice_c.dir/rosidl_typesupport_opensplice_cpp/message_pkg/msg/dds_opensplice/Encoder_SplDcps.cpp.o_FLAGS = -Wno-unused-but-set-variable
 
+# Custom flags: CMakeFiles/message_pkg__rosidl_typesupport_opensplice_c.dir/rosidl_typesupport_opensplice_cpp/message_pkg/msg/dds_opensplice/MotorValues_.cpp.o_FLAGS = -Wno-unused-but-set-variable
+
+# Custom flags: CMakeFiles/message_pkg__rosidl_typesupport_opensplice_c.dir/rosidl_typesupport_opensplice_cpp/message_pkg/msg/dds_opensplice/MotorValues_Dcps.cpp.o_FLAGS = -Wno-unused-but-set-variable
+
+# Custom flags: CMakeFiles/message_pkg__rosidl_typesupport_opensplice_c.dir/rosidl_typesupport_opensplice_cpp/message_pkg/msg/dds_opensplice/MotorValues_Dcps_impl.cpp.o_FLAGS = -Wno-unused-but-set-variable
+
+# Custom flags: CMakeFiles/message_pkg__rosidl_typesupport_opensplice_c.dir/rosidl_typesupport_opensplice_cpp/message_pkg/msg/dds_opensplice/MotorValues_SplDcps.cpp.o_FLAGS = -Wno-unused-but-set-variable
+
+# Custom flags: CMakeFiles/message_pkg__rosidl_typesupport_opensplice_c.dir/rosidl_typesupport_opensplice_cpp/message_pkg/msg/dds_opensplice/ServoValues_.cpp.o_FLAGS = -Wno-unused-but-set-variable
+
+# Custom flags: CMakeFiles/message_pkg__rosidl_typesupport_opensplice_c.dir/rosidl_typesupport_opensplice_cpp/message_pkg/msg/dds_opensplice/ServoValues_Dcps.cpp.o_FLAGS = -Wno-unused-but-set-variable
+
+# Custom flags: CMakeFiles/message_pkg__rosidl_typesupport_opensplice_c.dir/rosidl_typesupport_opensplice_cpp/message_pkg/msg/dds_opensplice/ServoValues_Dcps_impl.cpp.o_FLAGS = -Wno-unused-but-set-variable
+
+# Custom flags: CMakeFiles/message_pkg__rosidl_typesupport_opensplice_c.dir/rosidl_typesupport_opensplice_cpp/message_pkg/msg/dds_opensplice/ServoValues_SplDcps.cpp.o_FLAGS = -Wno-unused-but-set-variable
+
+# Custom flags: CMakeFiles/message_pkg__rosidl_typesupport_opensplice_c.dir/rosidl_typesupport_opensplice_cpp/message_pkg/msg/dds_opensplice/InputValues_.cpp.o_FLAGS = -Wno-unused-but-set-variable
+
+# Custom flags: CMakeFiles/message_pkg__rosidl_typesupport_opensplice_c.dir/rosidl_typesupport_opensplice_cpp/message_pkg/msg/dds_opensplice/InputValues_Dcps.cpp.o_FLAGS = -Wno-unused-but-set-variable
+
+# Custom flags: CMakeFiles/message_pkg__rosidl_typesupport_opensplice_c.dir/rosidl_typesupport_opensplice_cpp/message_pkg/msg/dds_opensplice/InputValues_Dcps_impl.cpp.o_FLAGS = -Wno-unused-but-set-variable
+
+# Custom flags: CMakeFiles/message_pkg__rosidl_typesupport_opensplice_c.dir/rosidl_typesupport_opensplice_cpp/message_pkg/msg/dds_opensplice/InputValues_SplDcps.cpp.o_FLAGS = -Wno-unused-but-set-variable
+
+# Custom flags: CMakeFiles/message_pkg__rosidl_typesupport_opensplice_c.dir/rosidl_typesupport_opensplice_cpp/message_pkg/msg/dds_opensplice/MecanumInput_.cpp.o_FLAGS = -Wno-unused-but-set-variable
+
+# Custom flags: CMakeFiles/message_pkg__rosidl_typesupport_opensplice_c.dir/rosidl_typesupport_opensplice_cpp/message_pkg/msg/dds_opensplice/MecanumInput_Dcps.cpp.o_FLAGS = -Wno-unused-but-set-variable
+
+# Custom flags: CMakeFiles/message_pkg__rosidl_typesupport_opensplice_c.dir/rosidl_typesupport_opensplice_cpp/message_pkg/msg/dds_opensplice/MecanumInput_Dcps_impl.cpp.o_FLAGS = -Wno-unused-but-set-variable
+
+# Custom flags: CMakeFiles/message_pkg__rosidl_typesupport_opensplice_c.dir/rosidl_typesupport_opensplice_cpp/message_pkg/msg/dds_opensplice/MecanumInput_SplDcps.cpp.o_FLAGS = -Wno-unused-but-set-variable
+
 # Custom flags: CMakeFiles/message_pkg__rosidl_typesupport_opensplice_c.dir/rosidl_typesupport_opensplice_cpp/message_pkg/srv/dds_opensplice/AddThreeInts_.cpp.o_FLAGS = -Wno-unused-but-set-variable
 
 # Custom flags: CMakeFiles/message_pkg__rosidl_typesupport_opensplice_c.dir/rosidl_typesupport_opensplice_cpp/message_pkg/srv/dds_opensplice/AddThreeInts_Dcps.cpp.o_FLAGS = -Wno-unused-but-set-variable

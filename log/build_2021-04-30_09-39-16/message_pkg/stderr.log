@@ -1,0 +1,27 @@
+Traceback (most recent call last):
+  File "/opt/ros/dashing/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c", line 40, in <module>
+    sys.exit(main())
+  File "/opt/ros/dashing/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c", line 35, in main
+    args.generator_arguments_file,
+  File "/opt/ros/dashing/lib/python3.6/site-packages/rosidl_generator_c/__init__.py", line 37, in generate_c
+    generate_files(generator_arguments_file, mapping)
+  File "/opt/ros/dashing/lib/python3.6/site-packages/rosidl_cmake/__init__.py", line 70, in generate_files
+    idl_file = parse_idl_file(locator)
+  File "/opt/ros/dashing/lib/python3.6/site-packages/rosidl_parser/parser.py", line 64, in parse_idl_file
+    content = parse_idl_string(string, png_file=png_file)
+  File "/opt/ros/dashing/lib/python3.6/site-packages/rosidl_parser/parser.py", line 72, in parse_idl_string
+    tree = get_ast_from_idl_string(idl_string)
+  File "/opt/ros/dashing/lib/python3.6/site-packages/rosidl_parser/parser.py", line 88, in get_ast_from_idl_string
+    _parser = Lark(grammar, start='specification')
+  File "/usr/lib/python3/dist-packages/lark/lark.py", line 203, in __init__
+    self.grammar = load_grammar(grammar, self.source)
+  File "/usr/lib/python3/dist-packages/lark/load_grammar.py", line 703, in load_grammar
+    tree = self.canonize_tree.transform( self.parser.parse(grammar_text+'\n') )
+  File "/usr/lib/python3/dist-packages/lark/visitors.py", line 122, in transform
+    for subtree in tree.iter_subtrees():
+  File "/usr/lib/python3/dist-packages/lark/tree.py", line 103, in iter_subtrees
+    seen.add(id(x))
+KeyboardInterrupt
+make[2]: *** [rosidl_generator_c/message_pkg/msg/num.h] Error 1
+make[1]: *** [CMakeFiles/message_pkg__rosidl_generator_c.dir/all] Interrupt
+make: *** [all] Interrupt

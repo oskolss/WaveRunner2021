@@ -32,6 +32,8 @@ extern "C"
 #endif
 
 // include message dependencies
+#include "rosidl_generator_c/primitives_sequence.h"  // encodervalue
+#include "rosidl_generator_c/primitives_sequence_functions.h"  // encodervalue
 
 // forward declare type support functions
 
@@ -84,24 +86,13 @@ convert_ros_to_dds_message_pkg__msg__Encoder(const void * untyped_ros_message, v
   }
   const __ros_msg_type_message_pkg__msg__Encoder * ros_message = static_cast<const __ros_msg_type_message_pkg__msg__Encoder *>(untyped_ros_message);
   __dds_msg_type_message_pkg__msg__Encoder * dds_message = static_cast<__dds_msg_type_message_pkg__msg__Encoder *>(untyped_dds_message);
-  // Field name: fl
+  // Field name: encodervalue
   {
-    dds_message->fl_ = ros_message->fl;
-  }
-
-  // Field name: fr
-  {
-    dds_message->fr_ = ros_message->fr;
-  }
-
-  // Field name: rl
-  {
-    dds_message->rl_ = ros_message->rl;
-  }
-
-  // Field name: rr
-  {
-    dds_message->rr_ = ros_message->rr;
+    size_t size = 4;
+    for (DDS::ULong i = 0; i < size; ++i) {
+      auto & ros_i = ros_message->encodervalue[i];
+      dds_message->encodervalue_[i] = ros_i;
+    }
   }
 
   return 0;
@@ -169,24 +160,13 @@ convert_dds_to_ros_message_pkg__msg__Encoder(const void * untyped_dds_message, v
   }
   const __dds_msg_type_message_pkg__msg__Encoder * dds_message = static_cast<const __dds_msg_type_message_pkg__msg__Encoder *>(untyped_dds_message);
   __ros_msg_type_message_pkg__msg__Encoder * ros_message = static_cast<__ros_msg_type_message_pkg__msg__Encoder *>(untyped_ros_message);
-  // Field name: fl
+  // Field name: encodervalue
   {
-    ros_message->fl = dds_message->fl_;
-  }
-
-  // Field name: fr
-  {
-    ros_message->fr = dds_message->fr_;
-  }
-
-  // Field name: rl
-  {
-    ros_message->rl = dds_message->rl_;
-  }
-
-  // Field name: rr
-  {
-    ros_message->rr = dds_message->rr_;
+    size_t size = 4;
+    for (DDS::ULong i = 0; i < size; i++) {
+      auto & ros_i = ros_message->encodervalue[i];
+      ros_i = dds_message->encodervalue_[i];
+    }
   }
 
   return 0;

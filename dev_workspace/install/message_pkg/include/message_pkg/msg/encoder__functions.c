@@ -15,10 +15,7 @@ message_pkg__msg__Encoder__init(message_pkg__msg__Encoder * msg)
   if (!msg) {
     return false;
   }
-  // fl
-  // fr
-  // rl
-  // rr
+  // encodervalue
   return true;
 }
 
@@ -28,10 +25,7 @@ message_pkg__msg__Encoder__fini(message_pkg__msg__Encoder * msg)
   if (!msg) {
     return;
   }
-  // fl
-  // fr
-  // rl
-  // rr
+  // encodervalue
 }
 
 message_pkg__msg__Encoder *

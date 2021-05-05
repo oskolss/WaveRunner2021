@@ -1,0 +1,642 @@
+[0.000000] (-) TimerEvent: {}
+[0.019043] (message_pkg) JobQueued: {'identifier': 'message_pkg', 'dependencies': OrderedDict()}
+[0.032003] (waverunner_package) JobQueued: {'identifier': 'waverunner_package', 'dependencies': OrderedDict([('message_pkg', '/home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/install/message_pkg')])}
+[0.032314] (message_pkg) JobStarted: {'identifier': 'message_pkg'}
+[0.086891] (message_pkg) JobProgress: {'identifier': 'message_pkg', 'progress': 'cmake'}
+[0.089297] (-) TimerEvent: {}
+[0.092512] (message_pkg) JobProgress: {'identifier': 'message_pkg', 'progress': 'build'}
+[0.097973] (message_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/build/message_pkg', '--', '-j2', '-l2'], 'cwd': '/home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/build/message_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('MAIL', '/var/mail/waverunner'), ('USER', 'waverunner'), ('SSH_CLIENT', '192.168.0.107 56371 22'), ('LC_TIME', 'sv_SE.UTF-8'), ('OSPL_INFOFILE', '<stdout>'), ('GIT_ASKPASS', '/home/waverunner/.vscode-server-insiders/bin/b4816cfd1f4161a3bb272354d181a9947760ee26/extensions/git/dist/askpass.sh'), ('LD_LIBRARY_PATH', '/opt/ros/dashing/opt/yaml_cpp_vendor/lib:/opt/ros/dashing/opt/rviz_ogre_vendor/lib:/usr/lib:/opt/ros/dashing/lib'), ('BROWSER', '/home/waverunner/.vscode-server-insiders/bin/b4816cfd1f4161a3bb272354d181a9947760ee26/bin/helpers/browser.sh'), ('SHLVL', '4'), ('OLDPWD', '/home/waverunner/Waverunner_Code/WaveRunner2021'), ('OSPL_URI', 'file:///opt/ros/dashing/share/opensplice_cmake_module/config/ros_ospl.xml'), ('HOME', '/home/waverunner'), ('TERM_PROGRAM_VERSION', '1.56.0-insider'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-0b02cd96-1d09-4c2b-81be-a34c8d0b6438.sock'), ('OSPL_VERBOSITY', '2'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/waverunner/.vscode-server-insiders/bin/b4816cfd1f4161a3bb272354d181a9947760ee26/extensions/git/dist/askpass-main.js'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'sv_SE.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/waverunner/.vscode-server-insiders/bin/b4816cfd1f4161a3bb272354d181a9947760ee26/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('OSPL_TMPL_PATH', '/usr/etc/opensplice/idlpp'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/home/waverunner/ros2_install'), ('ROS_DISTRO', 'dashing'), ('LOGNAME', 'waverunner'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_ID', '16'), ('TERM', 'xterm-256color'), ('OSPL_ERRORFILE', '<stderr>'), ('PATH', '/home/waverunner/.vscode-server-insiders/bin/b4816cfd1f4161a3bb272354d181a9947760ee26/bin:/home/waverunner/.local/bin:/opt/ros/dashing/bin:/home/waverunner/.vscode-server-insiders/bin/b4816cfd1f4161a3bb272354d181a9947760ee26/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'sv_SE.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('OSPL_HOME', '/usr'), ('LC_TELEPHONE', 'sv_SE.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-4a53c42ffe.sock'), ('AMENT_PREFIX_PATH', '/opt/ros/dashing'), ('ROS_DOMAIN_ID', '0'), ('LC_NAME', 'sv_SE.UTF-8'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'sv_SE.UTF-8'), ('LC_IDENTIFICATION', 'sv_SE.UTF-8'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/build/message_pkg'), ('SSH_CONNECTION', '192.168.0.107 56371 192.168.0.115 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('LC_NUMERIC', 'sv_SE.UTF-8'), ('PYTHONPATH', '/opt/ros/dashing/lib/python3.6/site-packages'), ('LC_PAPER', 'sv_SE.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/dashing')]), 'shell': False}
+[0.189621] (-) TimerEvent: {}
+[0.266457] (message_pkg) StdoutLine: {'line': b'-- Found ament_cmake: 0.7.6 (/opt/ros/dashing/share/ament_cmake/cmake)\n'}
+[0.289793] (-) TimerEvent: {}
+[0.393675] (-) TimerEvent: {}
+[0.428637] (message_pkg) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.9", minimum required is "3") \n'}
+[0.433710] (message_pkg) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.493880] (-) TimerEvent: {}
+[0.595650] (-) TimerEvent: {}
+[0.697391] (-) TimerEvent: {}
+[0.799240] (-) TimerEvent: {}
+[0.901665] (-) TimerEvent: {}
+[1.003952] (-) TimerEvent: {}
+[1.106388] (-) TimerEvent: {}
+[1.209755] (-) TimerEvent: {}
+[1.313473] (-) TimerEvent: {}
+[1.416824] (-) TimerEvent: {}
+[1.519663] (-) TimerEvent: {}
+[1.623475] (-) TimerEvent: {}
+[1.726277] (-) TimerEvent: {}
+[1.831301] (-) TimerEvent: {}
+[1.934154] (-) TimerEvent: {}
+[2.038924] (-) TimerEvent: {}
+[2.115212] (message_pkg) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.7.12 (/opt/ros/dashing/share/ament_lint_auto/cmake)\n'}
+[2.139102] (-) TimerEvent: {}
+[2.242992] (-) TimerEvent: {}
+[2.344782] (-) TimerEvent: {}
+[2.446606] (-) TimerEvent: {}
+[2.548375] (-) TimerEvent: {}
+[2.554356] (message_pkg) StdoutLine: {'line': b'-- Found rosidl_default_generators: 0.7.0 (/opt/ros/dashing/share/rosidl_default_generators/cmake)\n'}
+[2.648641] (-) TimerEvent: {}
+[2.750389] (-) TimerEvent: {}
+[2.856101] (-) TimerEvent: {}
+[2.961012] (-) TimerEvent: {}
+[2.993247] (message_pkg) StdoutLine: {'line': b'-- Found rosidl_adapter: 0.7.10 (/opt/ros/dashing/share/rosidl_adapter/cmake)\n'}
+[3.061230] (-) TimerEvent: {}
+[3.163261] (-) TimerEvent: {}
+[3.264288] (-) TimerEvent: {}
+[3.369188] (-) TimerEvent: {}
+[3.391129] (message_pkg) StdoutLine: {'line': b'-- Found PrismTech OpenSplice: /usr/share/opensplice/cmake\n'}
+[3.469417] (-) TimerEvent: {}
+[3.571225] (-) TimerEvent: {}
+[3.674940] (-) TimerEvent: {}
+[3.721095] (message_pkg) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.6.9") \n'}
+[3.775144] (-) TimerEvent: {}
+[3.878118] (-) TimerEvent: {}
+[3.991344] (-) TimerEvent: {}
+[4.094684] (-) TimerEvent: {}
+[4.199050] (-) TimerEvent: {}
+[4.301337] (-) TimerEvent: {}
+[4.368356] (message_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_opensplice_c\n'}
+[4.399305] (message_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp;rosidl_typesupport_opensplice_cpp\n'}
+[4.401522] (-) TimerEvent: {}
+[4.502452] (-) TimerEvent: {}
+[4.604831] (-) TimerEvent: {}
+[4.708518] (-) TimerEvent: {}
+[4.812160] (-) TimerEvent: {}
+[4.915736] (-) TimerEvent: {}
+[5.020735] (-) TimerEvent: {}
+[5.124320] (-) TimerEvent: {}
+[5.141081] (message_pkg) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 0.7.2 (/opt/ros/dashing/share/rmw_implementation_cmake/cmake)\n'}
+[5.224514] (-) TimerEvent: {}
+[5.305874] (message_pkg) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.9", minimum required is "3.5") \n'}
+[5.307306] (message_pkg) StdoutLine: {'line': b'-- Found python_cmake_module: 0.7.11 (/opt/ros/dashing/share/python_cmake_module/cmake)\n'}
+[5.324781] (-) TimerEvent: {}
+[5.428370] (-) TimerEvent: {}
+[5.471652] (message_pkg) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[5.474338] (message_pkg) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.6m\n'}
+[5.476811] (message_pkg) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.6m.so\n'}
+[5.528642] (-) TimerEvent: {}
+[5.632492] (-) TimerEvent: {}
+[5.737462] (-) TimerEvent: {}
+[5.839318] (-) TimerEvent: {}
+[5.941934] (-) TimerEvent: {}
+[6.044603] (-) TimerEvent: {}
+[6.149414] (-) TimerEvent: {}
+[6.186069] (message_pkg) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[6.194631] (message_pkg) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[6.223388] (message_pkg) StdoutLine: {'line': b'-- Configuring done\n'}
+[6.249631] (-) TimerEvent: {}
+[6.353208] (-) TimerEvent: {}
+[6.456472] (-) TimerEvent: {}
+[6.559664] (-) TimerEvent: {}
+[6.663206] (-) TimerEvent: {}
+[6.753749] (message_pkg) StdoutLine: {'line': b'-- Generating done\n'}
+[6.763543] (-) TimerEvent: {}
+[6.789138] (message_pkg) StdoutLine: {'line': b'-- Build files have been written to: /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/build/message_pkg\n'}
+[6.863768] (-) TimerEvent: {}
+[6.967174] (-) TimerEvent: {}
+[7.053128] (message_pkg) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[7.067368] (-) TimerEvent: {}
+[7.115323] (message_pkg) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating DDS interfaces\x1b[0m\n'}
+[7.167565] (-) TimerEvent: {}
+[7.269756] (-) TimerEvent: {}
+[7.372737] (-) TimerEvent: {}
+[7.476801] (-) TimerEvent: {}
+[7.581301] (-) TimerEvent: {}
+[7.685630] (-) TimerEvent: {}
+[7.790185] (-) TimerEvent: {}
+[7.894280] (-) TimerEvent: {}
+[7.998703] (-) TimerEvent: {}
+[8.102930] (-) TimerEvent: {}
+[8.207548] (-) TimerEvent: {}
+[8.311379] (-) TimerEvent: {}
+[8.415907] (-) TimerEvent: {}
+[8.520754] (-) TimerEvent: {}
+[8.626303] (-) TimerEvent: {}
+[8.730902] (-) TimerEvent: {}
+[8.835273] (-) TimerEvent: {}
+[8.940981] (-) TimerEvent: {}
+[9.062016] (-) TimerEvent: {}
+[9.165064] (-) TimerEvent: {}
+[9.273147] (-) TimerEvent: {}
+[9.377793] (-) TimerEvent: {}
+[9.482286] (-) TimerEvent: {}
+[9.586999] (-) TimerEvent: {}
+[9.691695] (-) TimerEvent: {}
+[9.796417] (-) TimerEvent: {}
+[9.900834] (-) TimerEvent: {}
+[10.005721] (-) TimerEvent: {}
+[10.106924] (-) TimerEvent: {}
+[10.208163] (-) TimerEvent: {}
+[10.257831] (message_pkg) StdoutLine: {'line': b'[  2%] Built target message_pkg__dds_opensplice_idl\n'}
+[10.308388] (-) TimerEvent: {}
+[10.403428] (message_pkg) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[10.409822] (-) TimerEvent: {}
+[10.510863] (-) TimerEvent: {}
+[10.615513] (-) TimerEvent: {}
+[10.720083] (-) TimerEvent: {}
+[10.824974] (-) TimerEvent: {}
+[10.925949] (-) TimerEvent: {}
+[11.030513] (-) TimerEvent: {}
+[11.134948] (-) TimerEvent: {}
+[11.239640] (-) TimerEvent: {}
+[11.344243] (-) TimerEvent: {}
+[11.448833] (-) TimerEvent: {}
+[11.552091] (-) TimerEvent: {}
+[11.656933] (-) TimerEvent: {}
+[11.761179] (-) TimerEvent: {}
+[11.867010] (-) TimerEvent: {}
+[11.971584] (-) TimerEvent: {}
+[12.076702] (-) TimerEvent: {}
+[12.180867] (-) TimerEvent: {}
+[12.285233] (-) TimerEvent: {}
+[12.392944] (-) TimerEvent: {}
+[12.497047] (-) TimerEvent: {}
+[12.601612] (-) TimerEvent: {}
+[12.706343] (-) TimerEvent: {}
+[12.811291] (-) TimerEvent: {}
+[12.916045] (-) TimerEvent: {}
+[13.020606] (-) TimerEvent: {}
+[13.127132] (-) TimerEvent: {}
+[13.225612] (message_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target message_pkg__rosidl_generator_c\x1b[0m\n'}
+[13.227291] (-) TimerEvent: {}
+[13.331259] (-) TimerEvent: {}
+[13.356243] (message_pkg) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/message_pkg__rosidl_generator_c.dir/rosidl_generator_c/message_pkg/msg/num__functions.c.o\x1b[0m\n'}
+[13.431476] (-) TimerEvent: {}
+[13.534935] (-) TimerEvent: {}
+[13.610866] (message_pkg) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/message_pkg__rosidl_generator_c.dir/rosidl_generator_c/message_pkg/msg/encoder__functions.c.o\x1b[0m\n'}
+[13.635151] (-) TimerEvent: {}
+[13.736145] (-) TimerEvent: {}
+[13.841536] (-) TimerEvent: {}
+[13.865493] (message_pkg) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/message_pkg__rosidl_generator_c.dir/rosidl_generator_c/message_pkg/srv/add_three_ints__functions.c.o\x1b[0m\n'}
+[13.941802] (-) TimerEvent: {}
+[14.045826] (-) TimerEvent: {}
+[14.150957] (-) TimerEvent: {}
+[14.227475] (message_pkg) StdoutLine: {'line': b'[  8%] \x1b[32m\x1b[1mLinking C shared library libmessage_pkg__rosidl_generator_c.so\x1b[0m\n'}
+[14.251165] (-) TimerEvent: {}
+[14.355891] (-) TimerEvent: {}
+[14.456906] (-) TimerEvent: {}
+[14.477715] (message_pkg) StdoutLine: {'line': b'[  8%] Built target message_pkg__rosidl_generator_c\n'}
+[14.551244] (message_pkg) StdoutLine: {'line': b'[  9%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[14.557115] (-) TimerEvent: {}
+[14.660752] (-) TimerEvent: {}
+[14.763443] (-) TimerEvent: {}
+[14.867434] (-) TimerEvent: {}
+[14.970701] (-) TimerEvent: {}
+[15.074383] (-) TimerEvent: {}
+[15.179935] (-) TimerEvent: {}
+[15.288318] (-) TimerEvent: {}
+[15.389301] (-) TimerEvent: {}
+[15.491407] (-) TimerEvent: {}
+[15.596319] (-) TimerEvent: {}
+[15.701237] (-) TimerEvent: {}
+[15.806118] (-) TimerEvent: {}
+[15.911172] (-) TimerEvent: {}
+[16.015894] (-) TimerEvent: {}
+[16.116896] (-) TimerEvent: {}
+[16.220831] (-) TimerEvent: {}
+[16.325116] (-) TimerEvent: {}
+[16.429689] (-) TimerEvent: {}
+[16.534903] (-) TimerEvent: {}
+[16.639523] (-) TimerEvent: {}
+[16.744098] (-) TimerEvent: {}
+[16.848187] (-) TimerEvent: {}
+[16.952911] (-) TimerEvent: {}
+[17.057622] (-) TimerEvent: {}
+[17.091733] (message_pkg) StdoutLine: {'line': b'[  9%] Built target message_pkg__cpp\n'}
+[17.157878] (-) TimerEvent: {}
+[17.161985] (message_pkg) StdoutLine: {'line': b'[ 10%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[17.258089] (-) TimerEvent: {}
+[17.363076] (-) TimerEvent: {}
+[17.468525] (-) TimerEvent: {}
+[17.573717] (-) TimerEvent: {}
+[17.678412] (-) TimerEvent: {}
+[17.779471] (-) TimerEvent: {}
+[17.880436] (-) TimerEvent: {}
+[17.981470] (-) TimerEvent: {}
+[18.083932] (-) TimerEvent: {}
+[18.186111] (-) TimerEvent: {}
+[18.291171] (-) TimerEvent: {}
+[18.395756] (-) TimerEvent: {}
+[18.503541] (-) TimerEvent: {}
+[18.607525] (-) TimerEvent: {}
+[18.711624] (-) TimerEvent: {}
+[18.816070] (-) TimerEvent: {}
+[18.827588] (message_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target message_pkg__rosidl_typesupport_c\x1b[0m\n'}
+[18.916283] (-) TimerEvent: {}
+[18.995117] (message_pkg) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding CXX object CMakeFiles/message_pkg__rosidl_typesupport_c.dir/rosidl_typesupport_c/message_pkg/msg/num__type_support.cpp.o\x1b[0m\n'}
+[19.017711] (-) TimerEvent: {}
+[19.123331] (-) TimerEvent: {}
+[19.230734] (-) TimerEvent: {}
+[19.327177] (message_pkg) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object CMakeFiles/message_pkg__rosidl_typesupport_c.dir/rosidl_typesupport_c/message_pkg/msg/encoder__type_support.cpp.o\x1b[0m\n'}
+[19.331004] (-) TimerEvent: {}
+[19.435298] (-) TimerEvent: {}
+[19.540319] (-) TimerEvent: {}
+[19.579202] (message_pkg) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object CMakeFiles/message_pkg__rosidl_typesupport_c.dir/rosidl_typesupport_c/message_pkg/srv/add_three_ints__type_support.cpp.o\x1b[0m\n'}
+[19.640689] (-) TimerEvent: {}
+[19.748097] (-) TimerEvent: {}
+[19.808023] (message_pkg) StdoutLine: {'line': b'[ 15%] \x1b[32m\x1b[1mLinking CXX shared library libmessage_pkg__rosidl_typesupport_c.so\x1b[0m\n'}
+[19.848320] (-) TimerEvent: {}
+[19.953360] (-) TimerEvent: {}
+[20.036328] (message_pkg) StdoutLine: {'line': b'[ 15%] Built target message_pkg__rosidl_typesupport_c\n'}
+[20.053584] (-) TimerEvent: {}
+[20.156192] (-) TimerEvent: {}
+[20.178240] (message_pkg) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mGenerating C++ type support for PrismTech OpenSplice\x1b[0m\n'}
+[20.256397] (-) TimerEvent: {}
+[20.359892] (-) TimerEvent: {}
+[20.465037] (-) TimerEvent: {}
+[20.568755] (-) TimerEvent: {}
+[20.674299] (-) TimerEvent: {}
+[20.779475] (-) TimerEvent: {}
+[20.884164] (-) TimerEvent: {}
+[20.988462] (-) TimerEvent: {}
+[21.092095] (-) TimerEvent: {}
+[21.196919] (-) TimerEvent: {}
+[21.300889] (-) TimerEvent: {}
+[21.405402] (-) TimerEvent: {}
+[21.510218] (-) TimerEvent: {}
+[21.615288] (-) TimerEvent: {}
+[21.720116] (-) TimerEvent: {}
+[21.826289] (-) TimerEvent: {}
+[21.930955] (-) TimerEvent: {}
+[22.035186] (-) TimerEvent: {}
+[22.140171] (-) TimerEvent: {}
+[22.244760] (-) TimerEvent: {}
+[22.349196] (-) TimerEvent: {}
+[22.453894] (-) TimerEvent: {}
+[22.558761] (-) TimerEvent: {}
+[22.663513] (-) TimerEvent: {}
+[22.768752] (-) TimerEvent: {}
+[22.873411] (-) TimerEvent: {}
+[22.978474] (-) TimerEvent: {}
+[23.082936] (-) TimerEvent: {}
+[23.190972] (-) TimerEvent: {}
+[23.296351] (-) TimerEvent: {}
+[23.356501] (message_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target message_pkg__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[23.396575] (-) TimerEvent: {}
+[23.483446] (message_pkg) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/message_pkg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/message_pkg/msg/num__type_support.c.o\x1b[0m\n'}
+[23.496796] (-) TimerEvent: {}
+[23.598268] (-) TimerEvent: {}
+[23.699405] (message_pkg) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding C object CMakeFiles/message_pkg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/message_pkg/msg/encoder__type_support.c.o\x1b[0m\n'}
+[23.700445] (-) TimerEvent: {}
+[23.804293] (-) TimerEvent: {}
+[23.881764] (message_pkg) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding C object CMakeFiles/message_pkg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/message_pkg/srv/add_three_ints__type_support.c.o\x1b[0m\n'}
+[23.904526] (-) TimerEvent: {}
+[24.009676] (-) TimerEvent: {}
+[24.119955] (-) TimerEvent: {}
+[24.124335] (message_pkg) StdoutLine: {'line': b'[ 21%] \x1b[32m\x1b[1mLinking C shared library libmessage_pkg__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[24.220176] (-) TimerEvent: {}
+[24.325107] (-) TimerEvent: {}
+[24.428722] (-) TimerEvent: {}
+[24.487037] (message_pkg) StdoutLine: {'line': b'[ 21%] Built target message_pkg__rosidl_typesupport_introspection_c\n'}
+[24.528952] (-) TimerEvent: {}
+[24.600555] (message_pkg) StdoutLine: {'line': b'[ 22%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[24.629160] (-) TimerEvent: {}
+[24.733743] (-) TimerEvent: {}
+[24.838615] (-) TimerEvent: {}
+[24.942972] (-) TimerEvent: {}
+[25.047444] (-) TimerEvent: {}
+[25.151878] (-) TimerEvent: {}
+[25.257856] (-) TimerEvent: {}
+[25.362699] (-) TimerEvent: {}
+[25.467106] (-) TimerEvent: {}
+[25.571888] (-) TimerEvent: {}
+[25.676658] (-) TimerEvent: {}
+[25.781920] (-) TimerEvent: {}
+[25.887170] (-) TimerEvent: {}
+[25.991677] (-) TimerEvent: {}
+[26.095111] (-) TimerEvent: {}
+[26.198381] (-) TimerEvent: {}
+[26.307127] (-) TimerEvent: {}
+[26.411526] (-) TimerEvent: {}
+[26.515773] (-) TimerEvent: {}
+[26.620898] (-) TimerEvent: {}
+[26.725676] (-) TimerEvent: {}
+[26.828650] (-) TimerEvent: {}
+[26.929691] (-) TimerEvent: {}
+[27.030697] (-) TimerEvent: {}
+[27.136031] (-) TimerEvent: {}
+[27.242754] (-) TimerEvent: {}
+[27.347306] (-) TimerEvent: {}
+[27.451994] (-) TimerEvent: {}
+[27.556890] (-) TimerEvent: {}
+[27.662105] (-) TimerEvent: {}
+[27.769838] (-) TimerEvent: {}
+[27.874864] (-) TimerEvent: {}
+[27.981414] (-) TimerEvent: {}
+[28.085337] (-) TimerEvent: {}
+[28.189433] (-) TimerEvent: {}
+[28.291747] (-) TimerEvent: {}
+[28.396438] (-) TimerEvent: {}
+[28.502822] (-) TimerEvent: {}
+[28.607965] (-) TimerEvent: {}
+[28.709688] (-) TimerEvent: {}
+[28.813193] (-) TimerEvent: {}
+[28.904562] (message_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target message_pkg__rosidl_typesupport_opensplice_cpp\x1b[0m\n'}
+[28.913405] (-) TimerEvent: {}
+[29.017107] (-) TimerEvent: {}
+[29.120304] (-) TimerEvent: {}
+[29.225957] (-) TimerEvent: {}
+[29.329541] (-) TimerEvent: {}
+[29.433059] (-) TimerEvent: {}
+[29.536656] (-) TimerEvent: {}
+[29.640275] (-) TimerEvent: {}
+[29.741219] (-) TimerEvent: {}
+[29.844723] (-) TimerEvent: {}
+[29.883016] (message_pkg) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/message_pkg__rosidl_typesupport_opensplice_cpp.dir/rosidl_typesupport_opensplice_cpp/message_pkg/msg/dds_opensplice/num__type_support.cpp.o\x1b[0m\n'}
+[29.944965] (-) TimerEvent: {}
+[30.046467] (-) TimerEvent: {}
+[30.151216] (-) TimerEvent: {}
+[30.252216] (-) TimerEvent: {}
+[30.353346] (-) TimerEvent: {}
+[30.454392] (-) TimerEvent: {}
+[30.555453] (-) TimerEvent: {}
+[30.664070] (-) TimerEvent: {}
+[30.771783] (-) TimerEvent: {}
+[30.836817] (message_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target message_pkg__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[30.872006] (-) TimerEvent: {}
+[30.975453] (-) TimerEvent: {}
+[30.979548] (message_pkg) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding CXX object CMakeFiles/message_pkg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/message_pkg/msg/num__type_support.cpp.o\x1b[0m\n'}
+[31.075674] (-) TimerEvent: {}
+[31.178494] (-) TimerEvent: {}
+[31.283392] (-) TimerEvent: {}
+[31.388164] (-) TimerEvent: {}
+[31.492700] (-) TimerEvent: {}
+[31.597691] (-) TimerEvent: {}
+[31.702327] (-) TimerEvent: {}
+[31.806997] (-) TimerEvent: {}
+[31.911741] (-) TimerEvent: {}
+[32.018739] (-) TimerEvent: {}
+[32.123838] (-) TimerEvent: {}
+[32.228390] (-) TimerEvent: {}
+[32.333172] (-) TimerEvent: {}
+[32.437943] (-) TimerEvent: {}
+[32.542785] (-) TimerEvent: {}
+[32.647497] (-) TimerEvent: {}
+[32.752395] (-) TimerEvent: {}
+[32.857616] (-) TimerEvent: {}
+[32.962486] (-) TimerEvent: {}
+[33.067508] (-) TimerEvent: {}
+[33.119030] (message_pkg) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/message_pkg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/message_pkg/msg/encoder__type_support.cpp.o\x1b[0m\n'}
+[33.167733] (-) TimerEvent: {}
+[33.271951] (-) TimerEvent: {}
+[33.377015] (-) TimerEvent: {}
+[33.481844] (-) TimerEvent: {}
+[33.586966] (-) TimerEvent: {}
+[33.687993] (-) TimerEvent: {}
+[33.790555] (-) TimerEvent: {}
+[33.893069] (-) TimerEvent: {}
+[33.999373] (-) TimerEvent: {}
+[34.119475] (-) TimerEvent: {}
+[34.224375] (-) TimerEvent: {}
+[34.329316] (-) TimerEvent: {}
+[34.434140] (-) TimerEvent: {}
+[34.538985] (-) TimerEvent: {}
+[34.640016] (-) TimerEvent: {}
+[34.745154] (-) TimerEvent: {}
+[34.846220] (-) TimerEvent: {}
+[34.947297] (-) TimerEvent: {}
+[35.049439] (-) TimerEvent: {}
+[35.153887] (-) TimerEvent: {}
+[35.258101] (-) TimerEvent: {}
+[35.363151] (-) TimerEvent: {}
+[35.464169] (-) TimerEvent: {}
+[35.558568] (message_pkg) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/message_pkg__rosidl_typesupport_opensplice_cpp.dir/rosidl_typesupport_opensplice_cpp/message_pkg/msg/dds_opensplice/encoder__type_support.cpp.o\x1b[0m\n'}
+[35.564386] (-) TimerEvent: {}
+[35.580739] (message_pkg) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/message_pkg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/message_pkg/srv/add_three_ints__type_support.cpp.o\x1b[0m\n'}
+[35.664614] (-) TimerEvent: {}
+[35.765687] (-) TimerEvent: {}
+[35.866808] (-) TimerEvent: {}
+[35.969040] (-) TimerEvent: {}
+[36.073703] (-) TimerEvent: {}
+[36.179213] (-) TimerEvent: {}
+[36.284102] (-) TimerEvent: {}
+[36.388989] (-) TimerEvent: {}
+[36.494096] (-) TimerEvent: {}
+[36.595280] (-) TimerEvent: {}
+[36.696446] (-) TimerEvent: {}
+[36.797491] (-) TimerEvent: {}
+[36.899378] (-) TimerEvent: {}
+[37.004356] (-) TimerEvent: {}
+[37.109246] (-) TimerEvent: {}
+[37.214410] (-) TimerEvent: {}
+[37.319021] (-) TimerEvent: {}
+[37.423909] (-) TimerEvent: {}
+[37.529498] (-) TimerEvent: {}
+[37.634760] (-) TimerEvent: {}
+[37.740009] (-) TimerEvent: {}
+[37.843752] (-) TimerEvent: {}
+[37.899191] (message_pkg) StdoutLine: {'line': b'[ 29%] \x1b[32m\x1b[1mLinking CXX shared library libmessage_pkg__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[37.943976] (-) TimerEvent: {}
+[38.050313] (-) TimerEvent: {}
+[38.153864] (-) TimerEvent: {}
+[38.258769] (-) TimerEvent: {}
+[38.363238] (-) TimerEvent: {}
+[38.466907] (-) TimerEvent: {}
+[38.499528] (message_pkg) StdoutLine: {'line': b'[ 29%] Built target message_pkg__rosidl_typesupport_introspection_cpp\n'}
+[38.567227] (-) TimerEvent: {}
+[38.675074] (-) TimerEvent: {}
+[38.779105] (-) TimerEvent: {}
+[38.881496] (-) TimerEvent: {}
+[38.984244] (-) TimerEvent: {}
+[39.087515] (-) TimerEvent: {}
+[39.204947] (-) TimerEvent: {}
+[39.307213] (-) TimerEvent: {}
+[39.409792] (-) TimerEvent: {}
+[39.512061] (-) TimerEvent: {}
+[39.616403] (-) TimerEvent: {}
+[39.720779] (-) TimerEvent: {}
+[39.825226] (-) TimerEvent: {}
+[39.929794] (-) TimerEvent: {}
+[40.034021] (-) TimerEvent: {}
+[40.140752] (-) TimerEvent: {}
+[40.213453] (message_pkg) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/message_pkg__rosidl_typesupport_opensplice_cpp.dir/rosidl_typesupport_opensplice_cpp/message_pkg/srv/dds_opensplice/add_three_ints__type_support.cpp.o\x1b[0m\n'}
+[40.240984] (-) TimerEvent: {}
+[40.344646] (-) TimerEvent: {}
+[40.452578] (-) TimerEvent: {}
+[40.555065] (-) TimerEvent: {}
+[40.659007] (-) TimerEvent: {}
+[40.763580] (-) TimerEvent: {}
+[40.868181] (-) TimerEvent: {}
+[40.973433] (-) TimerEvent: {}
+[41.078155] (-) TimerEvent: {}
+[41.182820] (-) TimerEvent: {}
+[41.287418] (-) TimerEvent: {}
+[41.392125] (-) TimerEvent: {}
+[41.496859] (-) TimerEvent: {}
+[41.601567] (-) TimerEvent: {}
+[41.706275] (-) TimerEvent: {}
+[41.811284] (-) TimerEvent: {}
+[41.915857] (-) TimerEvent: {}
+[42.020526] (-) TimerEvent: {}
+[42.125037] (-) TimerEvent: {}
+[42.229628] (-) TimerEvent: {}
+[42.334554] (-) TimerEvent: {}
+[42.439229] (-) TimerEvent: {}
+[42.543874] (-) TimerEvent: {}
+[42.648526] (-) TimerEvent: {}
+[42.753151] (-) TimerEvent: {}
+[42.857800] (-) TimerEvent: {}
+[42.962422] (-) TimerEvent: {}
+[43.067706] (-) TimerEvent: {}
+[43.171514] (-) TimerEvent: {}
+[43.275309] (-) TimerEvent: {}
+[43.379329] (-) TimerEvent: {}
+[43.484042] (-) TimerEvent: {}
+[43.588762] (-) TimerEvent: {}
+[43.692366] (-) TimerEvent: {}
+[43.793360] (-) TimerEvent: {}
+[43.897907] (-) TimerEvent: {}
+[44.002611] (-) TimerEvent: {}
+[44.108618] (-) TimerEvent: {}
+[44.219339] (-) TimerEvent: {}
+[44.321547] (-) TimerEvent: {}
+[44.425946] (-) TimerEvent: {}
+[44.530223] (-) TimerEvent: {}
+[44.634957] (-) TimerEvent: {}
+[44.739784] (-) TimerEvent: {}
+[44.844233] (-) TimerEvent: {}
+[44.951291] (-) TimerEvent: {}
+[45.055070] (-) TimerEvent: {}
+[45.159351] (-) TimerEvent: {}
+[45.263835] (-) TimerEvent: {}
+[45.368187] (-) TimerEvent: {}
+[45.472654] (-) TimerEvent: {}
+[45.577414] (-) TimerEvent: {}
+[45.682280] (-) TimerEvent: {}
+[45.775568] (message_pkg) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/message_pkg__rosidl_typesupport_opensplice_cpp.dir/rosidl_typesupport_opensplice_cpp/message_pkg/msg/dds_opensplice/Num_.cpp.o\x1b[0m\n'}
+[45.782496] (-) TimerEvent: {}
+[45.884600] (-) TimerEvent: {}
+[45.988140] (-) TimerEvent: {}
+[46.092382] (-) TimerEvent: {}
+[46.194977] (-) TimerEvent: {}
+[46.297542] (-) TimerEvent: {}
+[46.400064] (-) TimerEvent: {}
+[46.430911] (message_pkg) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/message_pkg__rosidl_typesupport_opensplice_cpp.dir/rosidl_typesupport_opensplice_cpp/message_pkg/msg/dds_opensplice/Num_Dcps.cpp.o\x1b[0m\n'}
+[46.500281] (-) TimerEvent: {}
+[46.607226] (-) TimerEvent: {}
+[46.711799] (-) TimerEvent: {}
+[46.816473] (-) TimerEvent: {}
+[46.921116] (-) TimerEvent: {}
+[47.025706] (-) TimerEvent: {}
+[47.130396] (-) TimerEvent: {}
+[47.235024] (-) TimerEvent: {}
+[47.339674] (-) TimerEvent: {}
+[47.443248] (-) TimerEvent: {}
+[47.452109] (message_pkg) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/message_pkg__rosidl_typesupport_opensplice_cpp.dir/rosidl_typesupport_opensplice_cpp/message_pkg/msg/dds_opensplice/Num_Dcps_impl.cpp.o\x1b[0m\n'}
+[47.543465] (-) TimerEvent: {}
+[47.648311] (-) TimerEvent: {}
+[47.753206] (-) TimerEvent: {}
+[47.857303] (-) TimerEvent: {}
+[47.961919] (-) TimerEvent: {}
+[48.066506] (-) TimerEvent: {}
+[48.171197] (-) TimerEvent: {}
+[48.275883] (-) TimerEvent: {}
+[48.380980] (-) TimerEvent: {}
+[48.485531] (-) TimerEvent: {}
+[48.590136] (-) TimerEvent: {}
+[48.695156] (-) TimerEvent: {}
+[48.799795] (-) TimerEvent: {}
+[48.904283] (-) TimerEvent: {}
+[49.009054] (-) TimerEvent: {}
+[49.113669] (-) TimerEvent: {}
+[49.230297] (-) TimerEvent: {}
+[49.334943] (-) TimerEvent: {}
+[49.394750] (message_pkg) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/message_pkg__rosidl_typesupport_opensplice_cpp.dir/rosidl_typesupport_opensplice_cpp/message_pkg/msg/dds_opensplice/Num_SplDcps.cpp.o\x1b[0m\n'}
+[49.435152] (-) TimerEvent: {}
+[49.538903] (-) TimerEvent: {}
+[49.642366] (-) TimerEvent: {}
+[49.744846] (-) TimerEvent: {}
+[49.847382] (-) TimerEvent: {}
+[49.951520] (-) TimerEvent: {}
+[50.055848] (-) TimerEvent: {}
+[50.160077] (-) TimerEvent: {}
+[50.264078] (-) TimerEvent: {}
+[50.368302] (-) TimerEvent: {}
+[50.472420] (-) TimerEvent: {}
+[50.560356] (message_pkg) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/message_pkg__rosidl_typesupport_opensplice_cpp.dir/rosidl_typesupport_opensplice_cpp/message_pkg/msg/dds_opensplice/Encoder_.cpp.o\x1b[0m\n'}
+[50.572636] (-) TimerEvent: {}
+[50.676040] (-) TimerEvent: {}
+[50.780692] (-) TimerEvent: {}
+[50.885305] (-) TimerEvent: {}
+[50.989902] (-) TimerEvent: {}
+[51.094579] (-) TimerEvent: {}
+[51.199144] (-) TimerEvent: {}
+[51.253992] (message_pkg) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/message_pkg__rosidl_typesupport_opensplice_cpp.dir/rosidl_typesupport_opensplice_cpp/message_pkg/msg/dds_opensplice/Encoder_Dcps.cpp.o\x1b[0m\n'}
+[51.299484] (-) TimerEvent: {}
+[51.404899] (-) TimerEvent: {}
+[51.509490] (-) TimerEvent: {}
+[51.614073] (-) TimerEvent: {}
+[51.718685] (-) TimerEvent: {}
+[51.823349] (-) TimerEvent: {}
+[51.927969] (-) TimerEvent: {}
+[52.032823] (-) TimerEvent: {}
+[52.137743] (-) TimerEvent: {}
+[52.242299] (-) TimerEvent: {}
+[52.277320] (message_pkg) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/message_pkg__rosidl_typesupport_opensplice_cpp.dir/rosidl_typesupport_opensplice_cpp/message_pkg/msg/dds_opensplice/Encoder_Dcps_impl.cpp.o\x1b[0m\n'}
+[52.342563] (-) TimerEvent: {}
+[52.447757] (-) TimerEvent: {}
+[52.552613] (-) TimerEvent: {}
+[52.656738] (-) TimerEvent: {}
+[52.760798] (-) TimerEvent: {}
+[52.864941] (-) TimerEvent: {}
+[52.969277] (-) TimerEvent: {}
+[53.073691] (-) TimerEvent: {}
+[53.177817] (-) TimerEvent: {}
+[53.282483] (-) TimerEvent: {}
+[53.387560] (-) TimerEvent: {}
+[53.492177] (-) TimerEvent: {}
+[53.596866] (-) TimerEvent: {}
+[53.701478] (-) TimerEvent: {}
+[53.806078] (-) TimerEvent: {}
+[53.910734] (-) TimerEvent: {}
+[54.015482] (-) TimerEvent: {}
+[54.120339] (-) TimerEvent: {}
+[54.234162] (-) TimerEvent: {}
+[54.288857] (message_pkg) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/message_pkg__rosidl_typesupport_opensplice_cpp.dir/rosidl_typesupport_opensplice_cpp/message_pkg/msg/dds_opensplice/Encoder_SplDcps.cpp.o\x1b[0m\n'}
+[54.334403] (-) TimerEvent: {}
+[54.438077] (-) TimerEvent: {}
+[54.543070] (-) TimerEvent: {}
+[54.647647] (-) TimerEvent: {}
+[54.752471] (-) TimerEvent: {}
+[54.856463] (-) TimerEvent: {}
+[54.961283] (-) TimerEvent: {}
+[55.065907] (-) TimerEvent: {}
+[55.170631] (-) TimerEvent: {}
+[55.275522] (-) TimerEvent: {}
+[55.386743] (-) TimerEvent: {}
+[55.491783] (-) TimerEvent: {}
+[55.596521] (-) TimerEvent: {}
+[55.697544] (-) TimerEvent: {}
+[55.743618] (message_pkg) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/message_pkg__rosidl_typesupport_opensplice_cpp.dir/rosidl_typesupport_opensplice_cpp/message_pkg/srv/dds_opensplice/AddThreeInts_.cpp.o\x1b[0m\n'}
+[55.797777] (-) TimerEvent: {}
+[55.901282] (-) TimerEvent: {}
+[56.004858] (-) TimerEvent: {}
+[56.109223] (-) TimerEvent: {}
+[56.214067] (-) TimerEvent: {}
+[56.323024] (-) TimerEvent: {}
+[56.424056] (-) TimerEvent: {}
+[56.438927] (message_pkg) StdoutLine: {'line': b"CMakeFiles/message_pkg__rosidl_typesupport_opensplice_cpp.dir/build.make:459: recipe for target 'CMakeFiles/message_pkg__rosidl_typesupport_opensplice_cpp.dir/rosidl_typesupport_opensplice_cpp/message_pkg/srv/dds_opensplice/AddThreeInts_.cpp.o' failed\n"}
+[56.450643] (message_pkg) StderrLine: {'line': b'make[2]: *** [CMakeFiles/message_pkg__rosidl_typesupport_opensplice_cpp.dir/rosidl_typesupport_opensplice_cpp/message_pkg/srv/dds_opensplice/AddThreeInts_.cpp.o] Interrupt\n'}
+[56.451734] (message_pkg) StdoutLine: {'line': b"CMakeFiles/Makefile2:554: recipe for target 'CMakeFiles/message_pkg__rosidl_typesupport_opensplice_cpp.dir/all' failed\n"}
+[56.456516] (message_pkg) StderrLine: {'line': b'make[1]: *** [CMakeFiles/message_pkg__rosidl_typesupport_opensplice_cpp.dir/all] Interrupt\n'}
+[56.457383] (message_pkg) StdoutLine: {'line': b"Makefile:140: recipe for target 'all' failed\n"}
+[56.458164] (message_pkg) StderrLine: {'line': b'make: *** [all] Interrupt\n'}
+[56.476600] (message_pkg) CommandEnded: {'returncode': -2}
+[56.524321] (-) TimerEvent: {}
+[56.629687] (-) TimerEvent: {}
+[56.734301] (-) TimerEvent: {}
+[56.839275] (-) TimerEvent: {}
+[56.943663] (-) TimerEvent: {}
+[57.045577] (-) TimerEvent: {}
+[57.150677] (-) TimerEvent: {}
+[57.255385] (-) TimerEvent: {}
+[57.360358] (-) TimerEvent: {}
+[57.465359] (-) TimerEvent: {}
+[57.566355] (-) TimerEvent: {}
+[57.672759] (-) TimerEvent: {}
+[57.776728] (-) TimerEvent: {}
+[57.885298] (-) TimerEvent: {}
+[58.018925] (-) TimerEvent: {}
+[58.043687] (message_pkg) JobEnded: {'identifier': 'message_pkg', 'rc': 'SIGINT'}
+[58.059092] (waverunner_package) JobSkipped: {'identifier': 'waverunner_package'}
+[58.059423] (-) EventReactorShutdown: {}

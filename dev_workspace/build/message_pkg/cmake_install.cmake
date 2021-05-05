@@ -378,6 +378,22 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/message_pkg/msg" TYPE FILE FILES "/home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/build/message_pkg/rosidl_adapter/message_pkg/msg/MotorValues.idl")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/message_pkg/msg" TYPE FILE FILES "/home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/build/message_pkg/rosidl_adapter/message_pkg/msg/ServoValues.idl")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/message_pkg/msg" TYPE FILE FILES "/home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/build/message_pkg/rosidl_adapter/message_pkg/msg/InputValues.idl")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/message_pkg/msg" TYPE FILE FILES "/home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/build/message_pkg/rosidl_adapter/message_pkg/msg/MecanumInput.idl")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/message_pkg/srv" TYPE FILE FILES "/home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/build/message_pkg/rosidl_adapter/message_pkg/srv/AddThreeInts.idl")
 endif()
 
@@ -387,6 +403,22 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/message_pkg/msg" TYPE FILE FILES "/home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/src/message_pkg/msg/Encoder.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/message_pkg/msg" TYPE FILE FILES "/home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/src/message_pkg/msg/MotorValues.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/message_pkg/msg" TYPE FILE FILES "/home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/src/message_pkg/msg/ServoValues.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/message_pkg/msg" TYPE FILE FILES "/home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/src/message_pkg/msg/InputValues.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/message_pkg/msg" TYPE FILE FILES "/home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/src/message_pkg/msg/MecanumInput.msg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)

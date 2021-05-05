@@ -1,5 +1,7 @@
 import rclpy
+
 from rclpy.node import Node
+
 
 from std_msgs.msg import String
 from message_pkg.msg import Encoder    # Custom waverunner msg
@@ -10,13 +12,13 @@ class WaverunnerTestSubscriber(Node):
         super().__init__('WaverunnerTestSubscriber')
         self.subscription = self.create_subscription(
             Encoder,
-            'waverunner_info',
+            'encoderInfo',
             self.listener_callback,
             10)
         self.subscription  # prevent unused variable warning
 
     def listener_callback(self, msg):
-        self.get_logger().info('RL rpm is: "%s"' % msg.rl)
+        self.get_logger().info('RPM FL:%s FR:%s RL:%s RR:%s' % (msg.fl,msg.fr,msg.rl,msg.rr))
 
 
 def main(args=None):

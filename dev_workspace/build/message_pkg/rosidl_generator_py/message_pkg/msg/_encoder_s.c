@@ -16,6 +16,9 @@
 #include "message_pkg/msg/encoder__struct.h"
 #include "message_pkg/msg/encoder__functions.h"
 
+#include "rosidl_generator_c/primitives_sequence.h"
+#include "rosidl_generator_c/primitives_sequence_functions.h"
+
 
 ROSIDL_GENERATOR_C_EXPORT
 bool message_pkg__msg__encoder__convert_from_py(PyObject * _pymsg, void * _ros_message)
@@ -52,40 +55,26 @@ bool message_pkg__msg__encoder__convert_from_py(PyObject * _pymsg, void * _ros_m
         full_classname_dest, 32) == 0);
   }
   message_pkg__msg__Encoder * ros_message = _ros_message;
-  {  // fl
-    PyObject * field = PyObject_GetAttrString(_pymsg, "fl");
+  {  // encodervalue
+    PyObject * field = PyObject_GetAttrString(_pymsg, "encodervalue");
     if (!field) {
       return false;
     }
-    assert(PyLong_Check(field));
-    ros_message->fl = PyLong_AsLongLong(field);
-    Py_DECREF(field);
-  }
-  {  // fr
-    PyObject * field = PyObject_GetAttrString(_pymsg, "fr");
-    if (!field) {
-      return false;
+    // TODO(dirk-thomas) use a better way to check the type before casting
+    assert(field->ob_type != NULL);
+    assert(field->ob_type->tp_name != NULL);
+    assert(strcmp(field->ob_type->tp_name, "numpy.ndarray") == 0);
+    PyArrayObject * seq_field = (PyArrayObject *)field;
+    Py_INCREF(seq_field);
+    assert(PyArray_NDIM(seq_field) == 1);
+    assert(PyArray_TYPE(seq_field) == NPY_INT32);
+    Py_ssize_t size = 4;
+    int32_t * dest = ros_message->encodervalue;
+    for (Py_ssize_t i = 0; i < size; ++i) {
+      int32_t tmp = *(npy_int32 *)PyArray_GETPTR1(seq_field, i);
+      memcpy(&dest[i], &tmp, sizeof(int32_t));
     }
-    assert(PyLong_Check(field));
-    ros_message->fr = PyLong_AsLongLong(field);
-    Py_DECREF(field);
-  }
-  {  // rl
-    PyObject * field = PyObject_GetAttrString(_pymsg, "rl");
-    if (!field) {
-      return false;
-    }
-    assert(PyLong_Check(field));
-    ros_message->rl = PyLong_AsLongLong(field);
-    Py_DECREF(field);
-  }
-  {  // rr
-    PyObject * field = PyObject_GetAttrString(_pymsg, "rr");
-    if (!field) {
-      return false;
-    }
-    assert(PyLong_Check(field));
-    ros_message->rr = PyLong_AsLongLong(field);
+    Py_DECREF(seq_field);
     Py_DECREF(field);
   }
 
@@ -110,49 +99,23 @@ PyObject * message_pkg__msg__encoder__convert_to_py(void * raw_ros_message)
     }
   }
   message_pkg__msg__Encoder * ros_message = (message_pkg__msg__Encoder *)raw_ros_message;
-  {  // fl
+  {  // encodervalue
     PyObject * field = NULL;
-    field = PyLong_FromLongLong(ros_message->fl);
-    {
-      int rc = PyObject_SetAttrString(_pymessage, "fl", field);
-      Py_DECREF(field);
-      if (rc) {
-        return NULL;
-      }
+    field = PyObject_GetAttrString(_pymessage, "encodervalue");
+    if (!field) {
+      return NULL;
     }
-  }
-  {  // fr
-    PyObject * field = NULL;
-    field = PyLong_FromLongLong(ros_message->fr);
-    {
-      int rc = PyObject_SetAttrString(_pymessage, "fr", field);
-      Py_DECREF(field);
-      if (rc) {
-        return NULL;
-      }
-    }
-  }
-  {  // rl
-    PyObject * field = NULL;
-    field = PyLong_FromLongLong(ros_message->rl);
-    {
-      int rc = PyObject_SetAttrString(_pymessage, "rl", field);
-      Py_DECREF(field);
-      if (rc) {
-        return NULL;
-      }
-    }
-  }
-  {  // rr
-    PyObject * field = NULL;
-    field = PyLong_FromLongLong(ros_message->rr);
-    {
-      int rc = PyObject_SetAttrString(_pymessage, "rr", field);
-      Py_DECREF(field);
-      if (rc) {
-        return NULL;
-      }
-    }
+    assert(field->ob_type != NULL);
+    assert(field->ob_type->tp_name != NULL);
+    assert(strcmp(field->ob_type->tp_name, "numpy.ndarray") == 0);
+    PyArrayObject * seq_field = (PyArrayObject *)field;
+    assert(PyArray_NDIM(seq_field) == 1);
+    assert(PyArray_TYPE(seq_field) == NPY_INT32);
+    assert(sizeof(npy_int32) == sizeof(int32_t));
+    npy_int32 * dst = (npy_int32 *)PyArray_GETPTR1(seq_field, 0);
+    int32_t * src = &(ros_message->encodervalue[0]);
+    memcpy(dst, src, 4 * sizeof(int32_t));
+    Py_DECREF(field);
   }
 
   // ownership of _pymessage is transferred to the caller

@@ -1,0 +1,53 @@
+[0.101s] Invoking command in '/home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/build/message_pkg': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/bin/cmake --build /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/build/message_pkg -- -j2 -l2
+[0.296s] -- Found ament_cmake: 0.7.6 (/opt/ros/dashing/share/ament_cmake/cmake)
+[0.467s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.9", minimum required is "3") 
+[0.468s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.180s] -- Found ament_lint_auto: 0.7.12 (/opt/ros/dashing/share/ament_lint_auto/cmake)
+[2.639s] -- Found rosidl_default_generators: 0.7.0 (/opt/ros/dashing/share/rosidl_default_generators/cmake)
+[3.116s] -- Found rosidl_adapter: 0.7.10 (/opt/ros/dashing/share/rosidl_adapter/cmake)
+[3.535s] -- Found PrismTech OpenSplice: /usr/share/opensplice/cmake
+[3.890s] -- Found PythonInterp: /usr/bin/python3 (found version "3.6.9") 
+[4.774s] CMake Error at /opt/ros/dashing/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:60 (message):
+[4.778s]   execute_process(/usr/bin/python3 -m rosidl_adapter --package-name
+[4.779s]   message_pkg --arguments-file
+[4.780s]   /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/build/message_pkg/rosidl_adapter__arguments__message_pkg.json
+[4.780s]   --output-dir
+[4.781s]   /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/build/message_pkg/rosidl_adapter/message_pkg
+[4.782s]   --output-file
+[4.782s]   /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/build/message_pkg/rosidl_adapter/message_pkg.idls)
+[4.783s]   returned error code 1:
+[4.784s] 
+[4.796s]   Error processing 'int64[] servoValue' of 'message_pkg/Encoder': 'the field
+[4.797s]   name 'servoValue' is not valid'
+[4.798s] 
+[4.798s]   Traceback (most recent call last):
+[4.799s] 
+[4.800s]     File "/usr/lib/python3.6/runpy.py", line 193, in _run_module_as_main
+[4.801s]       "__main__", mod_spec)
+[4.801s]     File "/usr/lib/python3.6/runpy.py", line 85, in _run_code
+[4.821s]       exec(code, run_globals)
+[4.822s]     File "/opt/ros/dashing/lib/python3.6/site-packages/rosidl_adapter/__main__.py", line 19, in <module>
+[4.823s]       sys.exit(main())
+[4.824s]     File "/opt/ros/dashing/lib/python3.6/site-packages/rosidl_adapter/main.py", line 55, in main
+[4.825s]       pathlib.Path(relative_path), output_dir)
+[4.825s]     File "/opt/ros/dashing/lib/python3.6/site-packages/rosidl_adapter/__init__.py", line 20, in convert_to_idl
+[4.831s]       package_dir, package_name, interface_file, output_dir / 'msg')
+[4.832s]     File "/opt/ros/dashing/lib/python3.6/site-packages/rosidl_adapter/msg/__init__.py", line 28, in convert_msg_to_idl
+[4.833s]       msg = parse_message_string(package_name, input_file.stem, content)
+[4.834s]     File "/opt/ros/dashing/lib/python3.6/site-packages/rosidl_adapter/parser.py", line 505, in parse_message_string
+[4.835s]       field_name, default_value_string))
+[4.836s]     File "/opt/ros/dashing/lib/python3.6/site-packages/rosidl_adapter/parser.py", line 346, in __init__
+[4.837s]       raise NameError("the field name '%s' is not valid" % name)
+[4.848s] 
+[4.849s]   NameError: the field name 'servoValue' is not valid
+[4.850s] 
+[4.851s] Call Stack (most recent call first):
+[4.852s]   /opt/ros/dashing/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:130 (rosidl_adapt_interfaces)
+[4.852s]   CMakeLists.txt:41 (rosidl_generate_interfaces)
+[4.853s] 
+[4.862s] 
+[4.863s] -- Configuring incomplete, errors occurred!
+[4.864s] See also "/home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/build/message_pkg/CMakeFiles/CMakeOutput.log".
+[4.865s] make: *** [cmake_check_build_system] Error 1
+[4.865s] Makefile:1832: recipe for target 'cmake_check_build_system' failed
+[4.867s] Invoked command in '/home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/build/message_pkg' returned '2': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/bin/cmake --build /home/waverunner/Waverunner_Code/WaveRunner2021/dev_workspace/build/message_pkg -- -j2 -l2

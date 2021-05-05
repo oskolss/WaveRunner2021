@@ -86,14 +86,13 @@ convert_ros_message_to_dds(
   const __ros_msg_type_Encoder & ros_message,
   __dds_msg_type_Encoder & dds_message)
 {
-  // member.name fl
-  dds_message.fl_ = ros_message.fl;
-  // member.name fr
-  dds_message.fr_ = ros_message.fr;
-  // member.name rl
-  dds_message.rl_ = ros_message.rl;
-  // member.name rr
-  dds_message.rr_ = ros_message.rr;
+  // member.name encodervalue
+  {
+    size_t size = 4;
+    for (DDS::ULong i = 0; i < size; i++) {
+      dds_message.encodervalue_[i] = ros_message.encodervalue[i];
+    }
+  }
 }
 
 ROSIDL_TYPESUPPORT_OPENSPLICE_CPP_EXPORT_message_pkg
@@ -147,18 +146,13 @@ convert_dds_message_to_ros(
   const __dds_msg_type_Encoder & dds_message,
   __ros_msg_type_Encoder & ros_message)
 {
-  // member.name fl
-  ros_message.fl =
-    dds_message.fl_;
-  // member.name fr
-  ros_message.fr =
-    dds_message.fr_;
-  // member.name rl
-  ros_message.rl =
-    dds_message.rl_;
-  // member.name rr
-  ros_message.rr =
-    dds_message.rr_;
+  // member.name encodervalue
+  {
+    size_t size = 4;
+    for (DDS::ULong i = 0; i < size; i++) {
+      ros_message.encodervalue[i] = dds_message.encodervalue_[i];
+    }
+  }
 }
 
 ROSIDL_TYPESUPPORT_OPENSPLICE_CPP_EXPORT_message_pkg

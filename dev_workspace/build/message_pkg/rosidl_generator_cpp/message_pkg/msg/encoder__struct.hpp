@@ -47,63 +47,30 @@ struct Encoder_
     if (rosidl_generator_cpp::MessageInitialization::ALL == _init ||
       rosidl_generator_cpp::MessageInitialization::ZERO == _init)
     {
-      this->fl = 0ll;
-      this->fr = 0ll;
-      this->rl = 0ll;
-      this->rr = 0ll;
+      std::fill<typename std::array<int32_t, 4>::iterator, int32_t>(this->encodervalue.begin(), this->encodervalue.end(), 0l);
     }
   }
 
   explicit Encoder_(const ContainerAllocator & _alloc, rosidl_generator_cpp::MessageInitialization _init = rosidl_generator_cpp::MessageInitialization::ALL)
+  : encodervalue(_alloc)
   {
-    (void)_alloc;
     if (rosidl_generator_cpp::MessageInitialization::ALL == _init ||
       rosidl_generator_cpp::MessageInitialization::ZERO == _init)
     {
-      this->fl = 0ll;
-      this->fr = 0ll;
-      this->rl = 0ll;
-      this->rr = 0ll;
+      std::fill<typename std::array<int32_t, 4>::iterator, int32_t>(this->encodervalue.begin(), this->encodervalue.end(), 0l);
     }
   }
 
   // field types and members
-  using _fl_type =
-    int64_t;
-  _fl_type fl;
-  using _fr_type =
-    int64_t;
-  _fr_type fr;
-  using _rl_type =
-    int64_t;
-  _rl_type rl;
-  using _rr_type =
-    int64_t;
-  _rr_type rr;
+  using _encodervalue_type =
+    std::array<int32_t, 4>;
+  _encodervalue_type encodervalue;
 
   // setters for named parameter idiom
-  Type & set__fl(
-    const int64_t & _arg)
+  Type & set__encodervalue(
+    const std::array<int32_t, 4> & _arg)
   {
-    this->fl = _arg;
-    return *this;
-  }
-  Type & set__fr(
-    const int64_t & _arg)
-  {
-    this->fr = _arg;
-    return *this;
-  }
-  Type & set__rl(
-    const int64_t & _arg)
-  {
-    this->rl = _arg;
-    return *this;
-  }
-  Type & set__rr(
-    const int64_t & _arg)
-  {
-    this->rr = _arg;
+    this->encodervalue = _arg;
     return *this;
   }
 
@@ -149,16 +116,7 @@ struct Encoder_
   // comparison operators
   bool operator==(const Encoder_ & other) const
   {
-    if (this->fl != other.fl) {
-      return false;
-    }
-    if (this->fr != other.fr) {
-      return false;
-    }
-    if (this->rl != other.rl) {
-      return false;
-    }
-    if (this->rr != other.rr) {
+    if (this->encodervalue != other.encodervalue) {
       return false;
     }
     return true;

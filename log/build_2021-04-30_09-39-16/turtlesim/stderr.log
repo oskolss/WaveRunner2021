@@ -1,0 +1,32 @@
+make[2]: *** Deleting file 'rosidl_generator_cpp/turtlesim/action/rotate_absolute.hpp'
+Traceback (most recent call last):
+  File "/opt/ros/dashing/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp", line 40, in <module>
+    sys.exit(main())
+  File "/opt/ros/dashing/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp", line 35, in main
+    args.generator_arguments_file,
+  File "/opt/ros/dashing/lib/python3.6/site-packages/rosidl_generator_cpp/__init__.py", line 37, in generate_cpp
+    generate_files(generator_arguments_file, mapping)
+  File "/opt/ros/dashing/lib/python3.6/site-packages/rosidl_cmake/__init__.py", line 70, in generate_files
+    idl_file = parse_idl_file(locator)
+  File "/opt/ros/dashing/lib/python3.6/site-packages/rosidl_parser/parser.py", line 64, in parse_idl_file
+    content = parse_idl_string(string, png_file=png_file)
+  File "/opt/ros/dashing/lib/python3.6/site-packages/rosidl_parser/parser.py", line 72, in parse_idl_string
+    tree = get_ast_from_idl_string(idl_string)
+  File "/opt/ros/dashing/lib/python3.6/site-packages/rosidl_parser/parser.py", line 89, in get_ast_from_idl_string
+    return _parser.parse(idl_string)
+  File "/usr/lib/python3/dist-packages/lark/lark.py", line 306, in parse
+    return self.parser.parse(text, start=start)
+  File "/usr/lib/python3/dist-packages/lark/parser_frontends.py", line 182, in parse
+    return self._parse(text, start)
+  File "/usr/lib/python3/dist-packages/lark/parser_frontends.py", line 54, in _parse
+    return self.parser.parse(input, start, *args)
+  File "/usr/lib/python3/dist-packages/lark/parsers/earley.py", line 293, in parse
+    self._parse(stream, columns, to_scan, start_symbol)
+  File "/usr/lib/python3/dist-packages/lark/parsers/xearley.py", line 135, in _parse
+    self.predict_and_complete(i, to_scan, columns, transitives)
+  File "/usr/lib/python3/dist-packages/lark/parsers/earley.py", line 144, in predict_and_complete
+    to_scan.add(new_item)
+KeyboardInterrupt
+make[2]: *** [rosidl_generator_cpp/turtlesim/action/rotate_absolute.hpp] Error 1
+make[1]: *** [CMakeFiles/turtlesim__cpp.dir/all] Interrupt
+make: *** [all] Interrupt

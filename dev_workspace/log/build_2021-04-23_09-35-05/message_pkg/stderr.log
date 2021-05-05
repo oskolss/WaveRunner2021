@@ -1,0 +1,25 @@
+Failed to import the site module
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site.py", line 570, in <module>
+    main()
+  File "/usr/lib/python3.6/site.py", line 557, in main
+    known_paths = addsitepackages(known_paths)
+  File "/usr/lib/python3.6/site.py", line 345, in addsitepackages
+    addsitedir(sitedir, known_paths)
+  File "/usr/lib/python3.6/site.py", line 213, in addsitedir
+    addpackage(sitedir, name, known_paths)
+  File "/usr/lib/python3.6/site.py", line 174, in addpackage
+    exec(line)
+  File "<string>", line 1, in <module>
+  File "/usr/lib/python3.6/types.py", line 171, in <module>
+    import functools as _functools
+  File "/usr/lib/python3.6/functools.py", line 21, in <module>
+    from collections import namedtuple
+  File "/usr/lib/python3.6/collections/__init__.py", line 853, in <module>
+    class ChainMap(MutableMapping):
+  File "/usr/lib/python3.6/collections/__init__.py", line 905, in ChainMap
+    @classmethod
+KeyboardInterrupt
+make[2]: *** [rosidl_generator_py/message_pkg/_message_pkg_s.ep.rosidl_typesupport_c.c] Interrupt
+make[1]: *** [message_pkg__py/CMakeFiles/message_pkg__py.dir/all] Interrupt
+make: *** [all] Interrupt
